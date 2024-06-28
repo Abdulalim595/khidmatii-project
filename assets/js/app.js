@@ -7,15 +7,11 @@ $(document).ready(function () {
     $(".offcanvas-area , .offcanvas-overlay").removeClass("active");
   });
   
-  $(".produsele__cards").owlCarousel({
+  $(".vision__slider").owlCarousel({
     items: 1,
     loop: true,
-    margin: 12,
-    nav: true,
-    navText: [
-      '<span><i class="fa-regular fa-angle-left"></i></span>',
-      '<span><i class="fa-regular fa-angle-right"></i></span>',
-    ],
+    margin: 8,
+    nav: false,
     dots: false,
     responsive: {
       0: {
@@ -26,6 +22,9 @@ $(document).ready(function () {
       },
       1000: {
         items: 3,
+      },
+      1200: {
+        items: 4,
       },
     },
   });
@@ -65,8 +64,6 @@ $(document).ready(function () {
     dots: true
   });
   
-
-
   
   $(".counter").counterUp({
     delay: 10,
@@ -75,20 +72,3 @@ $(document).ready(function () {
 
   
 });
-
-$(window).on('scroll', function () {
-  var scroll = $(window).scrollTop();
-  if (scroll < 245) {
-    $(".header__area").removeClass("scroll-header");
-  } else {
-    $(".header__area").addClass("scroll-header");
-  }
-});
-
-
-var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image, {
-	delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)'
-});
-

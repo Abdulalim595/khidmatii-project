@@ -55,12 +55,27 @@ h6 {
   padding: 0;
 
 }
-
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 32px;
+}
 h3 {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 28px;
 }
 
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
 p {
   margin: 0;
   padding: 0;
@@ -68,9 +83,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-span {
 }
 
 .btns {
@@ -224,7 +236,6 @@ img.header_icon2 {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
   color: #000;
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
@@ -326,7 +337,6 @@ ul.toggle__menu {
   -webkit-background-clip: text;
   color: transparent;
   background-image: var(--gradientColor);
-  font-family: 'satoshi';
   padding: 0px 24px 6px;
   position: relative;
 }
@@ -383,7 +393,6 @@ ul.toggle__menu {
   -webkit-background-clip: text;
   color: transparent;
   background-image: var(--gradientColor);
-  font-family: 'satoshi';
   padding: 0px 24px 6px;
   position: relative;
 }
@@ -495,6 +504,12 @@ a.login:after {
     /* box-shadow: -32px 0px 9px 0px #38383800; */
 }
 /*===================== HERO CSS AREA START =====================*/
+img.khidmatii-img {
+  position: absolute;
+  top: 288px;
+  width: 10%;
+  z-index: -2;
+}
 section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -607,8 +622,8 @@ form button {
   background-image: var(--gradientColor);
 }
 
-form button:hover {
-  box-shadow: -6px -6px 16px 0px #00000040 inset;
+form > button:hover {
+  box-shadow: -6px -6px 16px 0px #00000040 inset !important;
 }
 
 
@@ -696,6 +711,149 @@ section.contact__map {
   margin-bottom: 99px;
 }
 /*===================== CONTACT-MAP CSS AREA END =====================*/
+
+/*===================== TEAM CSS AREA START =====================*/
+.team__title.title {
+  margin: 0px auto 70px;
+  max-width: 930px;
+}
+
+section.team__area {
+  margin-top: 57px;
+}
+
+.team__title.title h4 {
+  font-weight: 600;
+}
+.team__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  max-width: 1128px;
+  margin: 0 auto 0px;
+}
+.team__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__card__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team__card__content ul li a {
+  color: #000;
+  font-size: 20px;
+}
+
+.team__card2 {display: grid;grid-template-columns: repeat(2,1fr);gap: 24px;}
+/*===================== TEAM CSS AREA END =====================*/
+
+/*===================== ABOUT-COUNT CSS AREA START =====================*/
+.about__details {
+  padding: 180px 0px !important;
+  margin: -35px 0px -50px !important;
+}
+.contact__detail__card img {
+  width: 96px;
+  margin-bottom: 26px;
+}
+
+.contact__detail__card {
+  text-align: center;
+}
+
+.contact__detail__card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact__detail__card span {
+  font-size: 20px;
+}
+
+.contact__detail__card * {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradientColor);
+}
+/*===================== ABOUT-COUNT CSS AREA END =====================*/
+
+/*===================== VISION CSS AREA START =====================*/
+.vision__card img {
+  width: 70px !important;
+}
+
+.vision__card h5 {
+  margin: 16px 0px;
+  font-weight: 600;
+}
+
+.vision__card p {
+  font-size: 14px;
+  color: var(--textDark);
+}
+
+.vision__card {
+  border-radius: 7px;
+  padding: 24px;
+  box-shadow: 2px 6px 13px 0px #7878781A;
+  box-shadow: 7px 22px 23px 0px #78787817;
+  /* box-shadow: 16px 50px 31px 0px #7878780D; */
+  /* box-shadow: 29px 88px 37px 0px #78787803; */
+  /* box-shadow: 46px 138px 41px 0px #78787800; */
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+}
+
+section.vision__area {
+  margin-bottom: 26px;
+}
+
+.vision__title.title {
+  max-width: 552px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*===================== VISION CSS AREA END =====================*/
+
+/*===================== LEADERSHIP CSS AREA START =====================*/
+section.leadership__area {
+  margin-bottom: 74px;
+}
+
+.leadership__card img {
+  width: 104px;
+  margin-bottom: 29px;
+}
+
+.leadership__card {
+  text-align: center;
+  padding: 28px 38px;
+  box-shadow: -2px 4px 9px 0px #8282821A;
+  box-shadow: -7px 15px 17px 0px #82828217;
+  /* box-shadow: -15px 34px 23px 0px #8282820D; */
+  /* box-shadow: -27px 61px 27px 0px #82828203; */
+  /* box-shadow: -42px 95px 29px 0px #82828200; */
+}
+
+.leadership__card__content * {
+  font-weight: 400;
+}
+
+.leadership__card__content h6 {
+  margin: 12px 0px;
+}
+
+.leadership__card__content p {
+  font-size: var(--f14);
+  line-height: 26px;
+}
+/*===================== LEADERSHIP CSS AREA END =====================*/
+
 /*===================== FOOTER CSS AREA START =====================*/
 .footer__social {
   display: flex;

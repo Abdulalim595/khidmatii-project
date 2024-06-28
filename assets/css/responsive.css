@@ -85,6 +85,42 @@ div#seachField, a.login {
   .company__contact {
     display: none;
 }
+
+
+.team__title.title {
+  margin-bottom: 35px;
+}
+
+.team__card {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 18px;
+}
+
+.team__card__content ul {
+  row-gap: 8px;
+  column-gap: 22px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.team__card__content ul li a {
+  font-size: 18px;
+}
+
+.team__wrap {
+  gap: 50px;
+}
+
+.team__card2 {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.team__wrap .team__card:last-child {display: flex !important;flex-direction: column-reverse;}
+
+
+
   .footer__top {
     flex-direction: column;
     gap: 20px;
@@ -97,6 +133,10 @@ div#seachField, a.login {
   :root {
     --f32 : 24px;
   }
+  .about__details {
+  padding: 320px 0px !important;
+  margin: -250px 0px -240px !important;
+}
   .welcome h6 {
     font-size: 14px;
 }

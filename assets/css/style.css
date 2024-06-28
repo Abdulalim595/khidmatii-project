@@ -1,16 +1,38 @@
 /*===================== REUSABLE  CSS AREA START =====================*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+/* font-family: 'satoshi'; */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
 }
+:root{
+  /* color */
+  --gradientColor: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%);
 
+  /* border-image-source: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%); */
+  
+  
+  --textBlue: #1191C8;
+  --textGray: #686868;
+  --textGrayOr: #656565;
+  --textGrayDark: #5D5D5D;
+  --textDark: #1E1E1E;
+
+  /* font-size */
+  --f14 : 14px;
+  --f16 : 16px;
+  --f18 : 18px;
+  --f20 : 20px;
+  --f24 : 24px;
+  --f32 : 32px;
+
+}
 ul,ol {
   padding: 0;
   margin: 0;
@@ -31,7 +53,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -43,16 +64,13 @@ h3 {
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
 }
 
 span {
-font-family: 'Roboto', sans-serif;
 }
 
 .btns {
@@ -78,7 +96,7 @@ main {
 .container-sm,
 .container-xl,
 .container-xxl {
-  max-width: 1404px;
+  max-width: 1212px;
   margin: 0 auto;
 }
 /*===================== REUSABLE CSS AREA END =====================*/
@@ -261,3 +279,181 @@ ul.toggle__menu {
   padding-bottom: 0px !important;
 }
 /*===================== OFFCANVAS CSS AREA END =====================*/
+
+/*===================== HEADER CSS AREA START =====================*/
+.welcome h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.welcome {
+  background: linear-gradient(298.19deg, #1292C8 18.28%, #52BD8C 83.92%);
+  text-align: center;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__wrap {
+  padding: 13px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 131px;
+}
+
+.header__wrap > ul {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.header__wrap > ul li a {
+  font-weight: 600;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradientColor);
+  font-family: 'satoshi';
+  padding: 0px 24px 6px;
+  position: relative;
+}
+
+.header__wrap > ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 3px;
+  background-image: var(--gradientColor);
+  transition: all 0.2s ease-in-out;
+}
+
+.header__wrap > ul li a:hover:after {
+  width: 100%;
+}
+
+.welcome h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.welcome {
+  background: linear-gradient(298.19deg, #1292C8 18.28%, #52BD8C 83.92%);
+  text-align: center;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__wrap {
+  padding: 13px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 131px;
+}
+
+.header__wrap > ul {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.header__wrap > ul li a {
+  font-weight: 600;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradientColor);
+  font-family: 'satoshi';
+  padding: 0px 24px 6px;
+  position: relative;
+}
+
+.header__wrap > ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 3px;
+  background-image: var(--gradientColor);
+  transition: all 0.2s ease-in-out;
+}
+
+.header__wrap > ul li a:hover:after {
+  width: 100%;
+}
+
+.search__login {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+div#seachField {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  position: relative;
+  border-radius: 44px;
+  background-image: var(--gradientColor);
+  height: 44px;
+}
+
+div#seachField:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 44px;
+  z-index: 0;
+  background: #fff;
+}
+
+div#seachField * {
+  z-index: 1;
+}
+
+div#seachField input,div#seachField input::placeholder {
+  font-weight: 500;
+  color: var(--textBlue);
+}
+
+a.login {
+  font-weight: 600;
+  color: var(--textBlue);
+  position: relative;
+  border-radius: 44px;
+  background-image: var(--gradientColor);
+  width: 121px;
+  height: 44px;
+  z-index: 2;
+}
+a.login:hover {
+  color: #fff;
+
+  background-image: var(--gradientColor);
+}
+a.login:hover:after {
+  display: none;
+}
+a.login:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 44px;
+  z-index: -1;
+  background: #fff;
+}
+/*===================== HEADER CSS AREA END =====================*/

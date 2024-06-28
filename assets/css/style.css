@@ -278,6 +278,14 @@ ul.toggle__menu {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
+
+.header__bar a {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradientColor);
+  font-size: var(--f24);
+  margin-left: 10px;
+}
 /*===================== OFFCANVAS CSS AREA END =====================*/
 
 /*===================== HEADER CSS AREA START =====================*/
@@ -411,6 +419,17 @@ div#seachField {
   background-image: var(--gradientColor);
   height: 44px;
 }
+div#seachField img{
+  width: 24px;
+}
+div#seachField input, div#seachField input::placeholder {
+  font-size: 14px;
+}
+
+.search__area {
+  width: 95%;
+  margin: 0 auto 20px;
+}
 
 div#seachField:after {
   content: '';
@@ -428,6 +447,7 @@ div#seachField * {
 div#seachField input,div#seachField input::placeholder {
   font-weight: 500;
   color: var(--textBlue);
+  width: 100%;
 }
 
 a.login {
@@ -457,7 +477,23 @@ a.login:after {
   background: #fff;
 }
 /*===================== HEADER CSS AREA END =====================*/
-
+.company__contact {
+    position: fixed;
+    top: 350px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 13px 14px;
+    background: #ffff;
+    border-radius: 8px 0px 0px 8px;
+    z-index: 999;
+    box-shadow: -1px 0px 3px 0px #3838381A;
+    box-shadow: -5px 0px 5px 0px #38383817;
+    box-shadow: -11px 0px 7px 0px #3838380D;
+    /* box-shadow: -20px 0px 8px 0px #38383803; */
+    /* box-shadow: -32px 0px 9px 0px #38383800; */
+}
 /*===================== HERO CSS AREA START =====================*/
 section {
   background-repeat: no-repeat;
@@ -498,6 +534,7 @@ section {
   font-family: 'satoshi';
 }
 .title h3 {
+  font-size: var(--f32);
   font-weight: 400;
 }
 
@@ -611,9 +648,13 @@ ul.list .option {
   z-index: 9;
   border-right: 1px solid var(--stroke, #E0E0E0);
   margin-right: 15px;
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 .inputL.input-selects {
   z-index: 9;
+  padding: 8px 15px;
 }
 .nice-select:after {
   height: 10px;
@@ -655,3 +696,93 @@ section.contact__map {
   margin-bottom: 99px;
 }
 /*===================== CONTACT-MAP CSS AREA END =====================*/
+/*===================== FOOTER CSS AREA START =====================*/
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 72px 11px;
+}
+
+.footer__top * {
+  font-family: 'satoshi';
+}
+
+.footer__top h4 {
+  font-size: var(--f24);
+  font-weight: 600;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(
+--gradientColor);
+}
+
+.footer__bottom {background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);padding: 28px 85px 35px;}
+
+.footer__cards {
+  display: flex;
+  align-items: start;
+  gap: 85px;
+}
+
+footer#footer__area {
+  margin-bottom: 30px;
+}
+
+.footer__wrap {
+  border-radius: 16px;
+  box-shadow: 0px -2px 4px 0px #BFBFBF1F;
+  box-shadow: 0px -7px 7px 0px #BFBFBF1A;
+  box-shadow: 0px -16px 10px 0px #6a6a6a0f;
+  overflow: hidden;
+}
+
+.footer__card h5 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--textDark);
+}
+
+.footer__card > ul li *,.footer__card > ul li,.footer__card > p {
+  font-size: var(--f14);
+  color: var(--textGrayDark);
+}
+
+.footer__card > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.send__mail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.send__mail input {
+  border-radius: 8px;
+  padding: 0px 16px;
+  height: 44px;
+  color: #9D9D9D;
+}
+
+.send__mail button {
+  border-radius: 8px;
+  height: 44px;
+  background-image: var(--gradientColor);
+  box-shadow: -6px -6px 16px 0px #00000040 inset;
+  box-shadow: 5px 5px 4px 0px #FFFFFF40 inset;
+  color: #fff;
+}
+
+.send__mail button:hover {
+  box-shadow: -6px -6px 16px 0px #00000040 inset;
+}
+/*===================== FOOTER CSS AREA END =====================*/

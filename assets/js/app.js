@@ -73,7 +73,7 @@ $(document).ready(function () {
     time: 1000,
   });
 
-  $('select').niceSelect();
+  
 });
 
 $(window).on('scroll', function () {

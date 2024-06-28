@@ -4,15 +4,7 @@
 
 /* XXL Device :1200px. */
 @media (min-width: 320px) and (max-width: 1680px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1320px;
-  }
-
+ 
   
 }
 
@@ -38,7 +30,42 @@
   .container-xxl {
     max-width: 960px;
   }
+  :root {
+    --f32 : 28px;
+  }
+  
+  .search__login {
+    gap: 10px;
+}
 
+.header__wrap > ul li a {
+    padding: 0px 8px 6px;
+}
+
+a.login {
+    width: 90px;
+}
+
+div#seachField {
+    padding: 10px 10px;
+}
+
+div#seachField, a.login {
+    height: 40px;
+}
+
+.logo {
+    width: 110px;
+}
+
+.footer__cards {
+    gap: 50px;
+}
+
+.footer__bottom,.footer__top {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 }
 
 /* MD Device :768px. */
@@ -51,12 +78,52 @@
   .container-xxl {
     max-width: 720px;
   }
-
+  :root {
+    --f32 : 26px;
+    --f24 : 20px
+  }
+  .company__contact {
+    display: none;
+}
+  .footer__top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
 }
 
 /* SM Small Device :320px. */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
- 
+  :root {
+    --f32 : 24px;
+  }
+  .welcome h6 {
+    font-size: 14px;
+}
+  .hero__area {
+    padding: 45px 0px 50px;
+}
+  .footer__cards {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__card > ul {
+    gap: 8px;
+}
+
+.footer__card h5 {
+    margin-bottom: 8px;
+}
+
+.footer__bottom, .footer__top {
+    padding: 10px 15px 20px;
+}
+
+section.contact__details {
+    padding: 140px 0px;
+    margin: -180px 0px -75px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {

@@ -28,43 +28,17 @@
     <div class="menu-close">
       <i class="far fa-times"></i>
     </div>
+    <div id="seachField" class="d-lg-flex search__area">
+        <img src="assets/img/search-normal.svg" alt="">
+        <input type="search" placeholder="Search for “AC repair”">
+    </div>
     <div class="offcanvas-menu">
       <div class="main-menu">
         <ul class="d-block aside_ul">
-          <li><a href="#"><img src="assets/img/header_icon1.svg" alt=""> home</a></li>
-            <li>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <img src="assets/img/header_icon2.svg" alt="" class="header_icon2">
-                      produse
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul class="toggle__menu">
-                        <li><a href="#">SNACKS</a></li>
-                        <li><a href="#">NAPOLITANE</a></li>
-                        <li><a href="#">BISCUITI</a></li>
-                        <li><a href="#">CEREALE</a></li>
-                        <li><a href="#">CHIPSURI</a></li>
-                        <li><a href="#">ENERGIZANT</a></li>
-                        <li><a href="#">SUCURI NATURALE</a></li>
-                        <li><a href="#">BERE</a></li>
-                        <li><a href="#">ОТЕТ</a></li>
-                        <li><a href="#">SOSURI</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href="#"><img src="assets/img/header_icon3.svg" alt=""> companie</a></li>
-            <li><a href="#"><img src="assets/img/header_icon4.svg" alt=""> NOUTĂȚI</a></li>
-            <li><a href="#"><img src="assets/img/header_icon5.svg" alt=""> DISTRIBUIRE</a></li>
-            <li><a href="#"><img src="assets/img/header_icon6.svg" alt=""> MAGAZIN ONLINE</a></li>
-            <li><a href="#"><img src="assets/img/footer_phone.svg" alt=""> CONTACT</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -72,6 +46,17 @@
 
   <div class="offcanvas-overlay"></div>
   <!-- ===================== OFFCANVAS AREA END ===================== -->
+
+  <!-- ===================== ALL-CONTACT AREA START ===================== -->
+  <div class="company__contact">
+    <a href="#"><img src="assets/img/phone.svg" alt=""></a>
+    <a href="#"><img src="assets/img/whatsup.svg" alt=""></a>
+    <a href="#"><img src="assets/img/twitter.svg" alt=""></a>
+    <a href="#"><img src="assets/img/telegram.svg" alt=""></a>
+    <a href="#"><img src="assets/img/linkedin.svg" alt=""></a>
+    <a href="#"><img src="assets/img/facebook.svg" alt=""></a>
+  </div>
+  <!-- ===================== ALL-CONTACT AREA END ===================== -->
 
   <!-- ===================== HEADER AREA START ===================== -->
    <div class="welcome">
@@ -83,21 +68,21 @@
             <div class="logo">
                 <a href="#"><img src="assets/img/logo.svg" alt=""></a>
             </div>
-            <ul>
+            <ul class="d-none d-lg-flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="search__login">
-                <div id="seachField">
+                <div id="seachField" class="d-none d-lg-flex">
                     <img src="assets/img/search-normal.svg" alt="">
                     <input type="search" placeholder="Search for “AC repair”">
                 </div>
                 <a href="#" class="login btns">Login</a>
-                <!-- <div class="header__bar d-lg-none d-block">
+                <div class="header__bar d-lg-none d-block">
                     <a href="#"><i class="fa-solid fa-bars"></i></a>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -217,7 +202,67 @@
 
   <!-- ===================== FOOTER AREA START ===================== -->
   <footer id="footer__area" class="footer__area">
-    
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                </div>
+                <h4>Services your worries away!</h4>
+                <div class="footer__social">
+                    <a href="#"><img src="assets/img/f-facebook.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/f-linkedin.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/f-instagram.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/f-whatsup.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="footer__cards">
+                            <div class="footer__card">
+                                <h5>Contact Us</h5>
+                                <ul>
+                                    <li>Office: <a href="#">Address</a></li>
+                                    <li>Email: <a href="#">E-mail</a></li>
+                                    <li>Contact: <a href="tel:123456789">123456789</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__card">
+                                <h5>Services</h5>
+                                <ul>
+                                    <li><a href="#">Cleaning & Pest Control</a></li>
+                                    <li><a href="#">A/C & Appliances services</a></li>
+                                    <li><a href="#">Home Maintenance</a></li>
+                                    <li><a href="#">Ø Book our Expert</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__card">
+                                <h5>Quick Links</h5>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Offers</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer__card">
+                            <h5>Quick Links</h5>
+                            <p>Subscribe to our Newsletter to get the latest update & news</p>
+                            <div class="send__mail">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </footer>
   <!-- ===================== FOOTER AREA END ===================== -->
 

@@ -459,12 +459,14 @@ a.login:after {
 /*===================== HEADER CSS AREA END =====================*/
 
 /*===================== HERO CSS AREA START =====================*/
-.hero__contact {
+section {
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.hero__contact {
   background-position: bottom;
   margin-bottom: 13px;
-  position: relative;
 }
 
 .hero__area {
@@ -489,12 +491,13 @@ a.login:after {
 
 /*===================== CONTACT-FORM CSS AREA START =====================*/
 .contact__form-title {
+}
+.title {
   text-align: center;
   margin-bottom: 16px;
   font-family: 'satoshi';
 }
-
-.contact__form-title h3 {
+.title h3 {
   font-weight: 400;
 }
 
@@ -618,3 +621,37 @@ ul.list .option {
   width: 10px;
 }
 /*===================== CONTACT-FORM CSS AREA END =====================*/
+
+/*===================== CONTACT-DETAIL CSS AREA START =====================*/
+section.contact__details {
+  background-position: center;
+  padding: 200px 0px;
+  margin: -180px 0px -50px;
+}
+
+.contact__detail__card p {
+  font-size: var(--f14);
+  color: var(--textGray);
+  line-height: 18.50px;
+}
+
+.contact__detail__card h6 {
+  margin-bottom: 4px;
+  color: #000;
+}
+
+.contact__detail__card * {
+  font-family: 'satoshi';
+}
+/*===================== CONTACT-DETAIL CSS AREA END =====================*/
+
+/*===================== CONTACT-MAP CSS AREA START =====================*/
+.map__title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+section.contact__map {
+  margin-bottom: 99px;
+}
+/*===================== CONTACT-MAP CSS AREA END =====================*/

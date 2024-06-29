@@ -404,9 +404,17 @@ ul.toggle__menu {
 .modal-header button img {
   width: 9px;
 }
+.detailB {
+  padding: 0px !important;
+}
 .modal-content {
   border-radius: 16px !important;
   overflow: hidden;
+  border: none !important;
+}
+.detail-slide {
+  padding: 32px !important;
+  
 }
 .modal-footer button {
   width: 100%;
@@ -741,8 +749,7 @@ section {
 /*===================== HERO CSS AREA END =====================*/
 
 /*===================== CONTACT-FORM CSS AREA START =====================*/
-.contact__form-title {
-}
+
 .title {
   text-align: center;
   margin-bottom: 16px;
@@ -1544,6 +1551,102 @@ img.clck {
 }
 .section.service__checkout {
   margin-bottom: 200px;
+}
+
+
+
+
+
+
+.detail__service {
+  max-width: 613px;
+  width: 100%;
+}
+div#carouselExampleControls {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 11px;
+}
+button.carousel-control-next img, button.carousel-control-prev img {
+  width: 9.5px;
+}
+
+button.carousel-control-next,button.carousel-control-prev {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button.carousel-control-next {
+  right: 9px;
+}
+
+button.carousel-control-prev {
+  left: 9px;
+}
+
+.modal__service__details .sell {
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  padding-bottom: 15px;
+  margin-bottom: 1;
+}
+
+.modal__service__details h5 {
+  margin-bottom: 11px;
+}
+
+.modal__service__details ol {
+  margin-left: 22px;
+  margin-bottom: 12px;
+}
+
+.modal__service__details ol li {
+  font-size: 14px;
+}
+
+.melvin__card {
+  border: 1px solid var(--stroke, #E0E0E0);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.melvin__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.melvin__card p {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--textGray);
+}
+
+.sell h5 {
+  margin: 0px;
+}
+.add-to-cart {
+  width: 149px;
+  height: 40px;
+}
+
+.modal__service__details .sell__cart {
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  padding-bottom: 15px;
+  margin-top: -11px;
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell__cart .sell {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 /*===================== SERVICE-AREA CSS AREA END =====================*/
 

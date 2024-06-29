@@ -58,6 +58,14 @@ div#seachField, a.login {
     width: 110px;
 }
 
+.booking__cards {
+  gap: 10px;
+}
+
+.booking__card__img {
+  height: 54px;
+}
+
 .footer__cards {
     gap: 50px;
 }
@@ -118,6 +126,21 @@ div#seachField, a.login {
 }
 
 .team__wrap .team__card:last-child {display: flex !important;flex-direction: column-reverse;}
+.booking__cards {
+  grid-template-columns: repeat(4,1fr);
+}
+.booking__card__img {
+  height: 155px;
+  border-radius: 19px;
+}
+.booking__card__img:after {
+  border-radius: 20px;
+}
+.booking__card__img img {
+  inset: 2px;
+  width: 98%;
+  height: 98%;
+}
 
 
 
@@ -130,6 +153,24 @@ div#seachField, a.login {
 
 /* SM Small Device :320px. */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+  
   :root {
     --f32 : 24px;
   }
@@ -143,6 +184,18 @@ div#seachField, a.login {
   .hero__area {
     padding: 45px 0px 50px;
 }
+
+.booking__card__img {
+  height: 110px;
+  border-radius: 13px;
+}
+
+.booking__card__img img {
+  inset: 1px;
+  width: 98%;
+  height: 98%;
+}
+
   .footer__cards {
     flex-direction: column;
     gap: 30px;
@@ -164,13 +217,23 @@ section.contact__details {
     padding: 140px 0px;
     margin: -180px 0px -75px;
 }
+a.body__arrow.btns.btn__gradient {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .offcanvas-area {
     width: 100%;
   }
-
+  .service__repair {
+    flex-direction: column;
+}
+.booking__cards {
+  grid-template-columns: repeat(3,1fr);
+}
 }
 
 /* SM Small Device :576px. */

@@ -351,8 +351,6 @@ ul.toggle__menu {
   color: var(--textBlue);
 }
 
-.login__title {}
-
 .modal-body form {
   display: flex;
   flex-direction: column;
@@ -1422,6 +1420,7 @@ section.service__application {
 
 .last-p {
   color: var(--textGray);
+  font-size: 12px !important;
 }
 
 .collection * {
@@ -1647,6 +1646,136 @@ button.carousel-control-prev {
   border-bottom: none;
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+.proceed__slot ol {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.proceed__slot h6 {
+  margin-bottom: 8px;
+}
+
+.proceed__slot {
+  margin-bottom: 12px;
+}
+
+.proceed__slot p {
+  font-size: 12px;
+  color: var(--textGray);
+  margin-top: -8px;
+}
+
+.proceed__date {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.proceed__date__card {
+  border-radius: 8px;
+  width: 138px;
+  height: 32px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  background-image: var(--gradientColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proceed__date__card span {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--textGray);
+}
+
+.proceed__date__card:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+.cenceld {
+  position: relative;
+  z-index: 1;
+  background-image: var(--gradientColor);
+  border-radius: 8px;
+}
+.cenceld:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+.proceed__footer {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: end;
+  gap: 20px;
+}
+
+.proceed__footer button {
+  width: 147px;
+  height: 40px;
+}
+.proceed__date__card:hover {
+  background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+}
+
+.proceed__date__card:hover:after {
+  display: none;
+}
+
+.customer__img__content p {
+  font-size: 14px;
+}
+
+.proceed__discount .customer__card__field {
+  max-width: 349px;
+  width: 100%;
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+  margin-bottom: 8px;
+}
+
+.proceed__discount ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.proceed__discount ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+
+.poceed__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emargency__charge {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.emargency__charge span {
+  color: var(--textBlue);
+  font-size: 10px;
 }
 /*===================== SERVICE-AREA CSS AREA END =====================*/
 

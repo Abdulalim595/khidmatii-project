@@ -331,6 +331,142 @@ ul.toggle__menu {
 /*===================== OFFCANVAS CSS AREA END =====================*/
 
 /*===================== HEADER CSS AREA START =====================*/
+.modal-header {
+  border: none !important;
+}
+
+.login__title {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.login__title img {
+  width: 166px;
+  margin-bottom: 21px;
+}
+
+.login__title span {
+  display: block;
+  font-size: 12px;
+  color: var(--textBlue);
+}
+
+.login__title {}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-body form input {
+  padding: 14px 48px;
+  border: 1px solid var(--disabled, #A3A3A3);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.modal-body form a {
+  text-align: end;
+  color: var(--textBlue) !important;
+  font-size: 12px;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
+.register__input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: start;
+}
+
+.register__input label {
+  font-size: 14px;
+}
+.modal-header button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 29px;
+  height: 29px;
+  border-radius: 5px;
+  background: var(--gradientColor);
+  box-shadow: -3.78px -3.78px 10.09px 0px #00000040 inset;
+  box-shadow: 3.15px 3.15px 2.52px 0px #FFFFFF40 inset;
+}
+
+.modal-header button img {
+  width: 9px;
+}
+.modal-content {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+.modal-footer button {
+  width: 100%;
+  height: 52px;
+}
+button.registers {
+  border-radius: 8px;
+  position: relative;
+  background-image: var(--gradientColor);
+  z-index: 2;
+}
+
+button.registers:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+.modal-backdrop {
+  z-index: -1;
+  background-color: #fff;
+}
+.login-area,.search__login {
+  position: relative;
+}
+.account-card {
+  width: 159px;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0px 2px 4px 0px #5959591A;
+  box-shadow: 2px 7px 7px 0px #59595917;
+  /* box-shadow: 4px 16px 10px 0px #5959590D; */
+  /* box-shadow: 7px 28px 12px 0px #59595903; */
+  /* box-shadow: 12px 44px 13px 0px #59595900; */
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background: #fff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+.shows {
+  opacity: 1;
+  visibility: visible;
+}
+
+.account-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.account-card ul li a {
+  color: #000000;
+}
+
+
 .welcome h6 {
   font-family: "Inter", sans-serif;
   font-weight: 500;

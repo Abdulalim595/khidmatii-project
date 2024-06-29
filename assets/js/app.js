@@ -94,3 +94,10 @@ $(document).ready(function () {
 
   
 });
+
+
+let login = document.querySelector('.login');
+let accountCard = document.querySelector('.account-card');
+login.addEventListener('click', () => {
+  accountCard.classList.toggle('shows')
+})

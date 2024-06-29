@@ -625,7 +625,39 @@ div#seachField input,div#seachField input::placeholder {
   color: var(--textBlue);
   width: 100%;
 }
+.verify {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 8px;
+}
 
+.verify input {
+  border-radius: 8px;
+  border: 1px solid var(--main, #2691C9);
+  width: 54px;
+  height: 54px;
+  padding: 0px !important;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.modal-body form p {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.modal-body form p a {
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+.login__title a {
+  color: var(--textBlue) !important;
+}
 a.login {
   font-weight: 600;
   color: var(--textBlue);
@@ -635,6 +667,7 @@ a.login {
   width: 121px;
   height: 44px;
   z-index: 2;
+  cursor: pointer;
 }
 a.login:hover {
   color: #fff;

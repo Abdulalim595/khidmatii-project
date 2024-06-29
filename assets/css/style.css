@@ -1180,14 +1180,201 @@ section.leadership__area {
   height: 32px;
   margin: 0 auto;
 }
-
+ol {
+  list-style: disc;
+  color: var(--textGray);
+}
 .service__cart__card ol {
   margin-bottom: 15px;
-  list-style: disc;
   padding: 0px 20px;
 }
 section.service__application {
   margin-bottom: 300px;
+}
+
+.checkout__title.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkout__title img {
+  width: 45px;
+}
+
+.checkout__title {
+  margin-bottom: 34px;
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  padding-bottom: 12px;
+}
+
+.customer__card h6 {
+  margin-bottom: 4px;
+}
+
+.customars__details {
+  padding: 11px 40px 11px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 37px;
+}
+
+.customer__card__field img {
+  width: 24px;
+}
+
+.customer__card__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+}
+
+.customer__card__field a {
+  width: 40px;
+  height: 32px;
+  border-radius: 16px;
+  background: #2691C933;
+}
+
+.customer__card__field a img {
+  width: 16px;
+}
+
+.last-p {
+  color: var(--textGray);
+}
+
+.collection * {
+  font-weight: 400;
+}
+
+.collection h5 {
+  margin-bottom: 8px;
+}
+.customer__img__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.collection ol li {
+  font-size: 12px;
+  margin-left: 18px;
+  margin-bottom: 8px;
+}
+
+.collection {
+  margin-left: 24px;
+}
+
+img.clck {
+  filter: brightness(0.5);
+}
+
+.pricing__card > h5 {
+  margin-bottom: 8px;
+}
+
+.pricing__card {
+  padding: 22px 12px;
+  border-radius: 8px;
+  position: relative;
+  background-image: var(--gradientColor);
+  z-index: 2;
+}
+
+.pricing__card:after, .apply__discount:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.apply__discount {
+  border-radius: 8px;
+  position: relative;
+  background-image: var(--gradientColor);
+  z-index: 2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 4px 9px;
+}
+
+.apply__discount button {
+  width: 79px;
+  height: 100%;
+}
+
+.apply__discount span {
+  color: var(--textGray);
+  font-size: 14px;
+}
+
+.payment__summary ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--textDark);
+}
+.pricing__card .sell {
+  border: none;
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+}
+.payment__summary ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 11px;
+  padding-bottom: 13px;
+  border-bottom: 1px dashed var(--stroke, #E0E0E0);
+}
+
+.total__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+  border-radius: 8px;
+  height: 38px;
+  padding: 7px;
+}
+
+.amount__pay {
+  border-radius: 8px;
+  border: 1px solid var(--stroke, #E0E0E0);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: var(--textDark);
+  margin-bottom: 8px;
+}
+
+.pricing > a {
+  width: 208px;
+  height: 48px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+.section.service__checkout {
+  margin-bottom: 200px;
 }
 /*===================== SERVICE-AREA CSS AREA END =====================*/
 

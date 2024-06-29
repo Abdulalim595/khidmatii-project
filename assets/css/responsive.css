@@ -222,6 +222,10 @@ a.body__arrow.btns.btn__gradient {
   height: 35px;
   font-size: 20px;
 }
+
+.customer__card__field {
+  padding: 10px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {

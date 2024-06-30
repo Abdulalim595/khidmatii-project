@@ -143,3 +143,4 @@ function moreOffers(){
   let cartCardList = document.querySelector('.cart-card-list')
   cartCardList.classList.toggle('cartList')
 }
+

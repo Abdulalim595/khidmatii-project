@@ -7,27 +7,27 @@ $(document).ready(function () {
     $(".offcanvas-area , .offcanvas-overlay").removeClass("active");
   });
   
-  $(".vision__slider").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 8,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-      1200: {
-        items: 4,
-      },
-    },
-  });
+  // $(".vision__slider").owlCarousel({
+  //   items: 1,
+  //   loop: true,
+  //   margin: 8,
+  //   nav: false,
+  //   dots: false,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     600: {
+  //       items: 2,
+  //     },
+  //     1000: {
+  //       items: 3,
+  //     },
+  //     1200: {
+  //       items: 4,
+  //     },
+  //   },
+  // });
 
   $(".category__slider").owlCarousel({
     items: 1,
@@ -144,3 +144,7 @@ function moreOffers(){
   cartCardList.classList.toggle('cartList')
 }
 
+function paymentBtn(){
+  let paymentMethodCard = document.querySelector('.payment__method__card');
+  paymentMethodCard.classList.toggle("paymentActive")
+}

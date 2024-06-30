@@ -318,9 +318,57 @@
                                         <div>
                                             <p>Date : 15-06-2024  Time : 12:00:00 pm</p>
                                         </div>
+                                    </div> 
+                                    <!-- <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button> -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <img src="assets/img/write.svg" alt="">
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                                  <div class="login__title write-title">
+                                                      <h5>Select slot</h5>
+                                                  </div>
+                                                  <div class="proceed__slot">
+                                                    <h6>Select service slot</h6>
+                                                    <p>Professional will arrive within this time</p>
+                                                    <div class="proceed__date">
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 AM - 01:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>01:00 PM - 05:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>05:00 PM - 09:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn__gradient slots-btn" data-bs-dismiss="modal">Book slot</button>
+                                              </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button>
+                                    
                                 </div>
+
                             </div>
                             <div class="customer__card">
                                 <h6>Payment method</h6>
@@ -331,7 +379,68 @@
                                             <p>COD( Cash On Delivery )</p>
                                         </div>
                                     </div>
-                                    <a href="#" class="btns"><img src="assets/img/write.svg" alt=""></a>
+                                    <a href="#" class="btns write-btn" onclick="paymentBtn()"><img src="assets/img/write.svg" alt=""></a>
+                                </div>
+                                <div class="payment__method__card">
+                                    <form action="/action_page.php">
+                                        <div class="payment__method">
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="paytm">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="paytm">Paytm Wallet</label>
+                                                        <span>demo@paytm</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/paytm.svg" alt="">
+                                            </div>
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="wallet">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="wallet">Phone Pe Wallet</label>
+                                                        <span>demo@phonepe</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/phonepe.svg" alt="">
+                                            </div>
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="upipay">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="upipay">UPI Payments</label>
+                                                        <span>demo@upi</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/upi-payment.svg" alt="">
+                                            </div>
+                                            <div class="enter__upi">
+                                                <input type="text" placeholder="Enter your UPI ID">
+                                                <button class="" type="button">Verify</button>
+                                            </div>
+                                            <p>Banking name: <span>ANJALI ARORA</span></p>
+                                        </div>
+                                    </form>
+                                    <div class="cash__pay">
+                                        <div class="paycash__check">
+                                            <div class="payment__select">
+                                                <input type="radio" id="paycash">
+                                                <span></span>
+                                            </div>
+                                            <label for="paycash">Pay On Cash</label>
+                                        </div>
+                                        <img src="assets/img/pay-cash.svg" alt="">
+                                    </div>
+                                    <button type="button" class="btn__gradient">Select</button>
                                 </div>
                             </div>
                             <div class="customer__card">
@@ -398,7 +507,89 @@
                                 <span>Amount to pay</span>
                                 <span>937 BD</span>
                             </div>
-                            <a href="#" class="btns btn__gradient">Proceed</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btns btn__gradient" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                Proceed
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        
+                                          <div class="login__title write-title">
+                                              <h5>Select your payment method</h5>
+                                          </div>
+                                          <div class="payment__method__card paymentActive">
+                                            <form action="/action_page.php">
+                                                <div class="payment__method">
+                                                    <div class="single__payment">
+                                                        <div class="payment__check">
+                                                            <div class="payment__select">
+                                                                <input type="radio" id="paytm">
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="payment__name">
+                                                                <label for="paytm">Paytm Wallet</label>
+                                                                <span>demo@paytm</span>
+                                                            </div>
+                                                        </div>
+                                                        <img src="assets/img/paytm.svg" alt="">
+                                                    </div>
+                                                    <div class="single__payment">
+                                                        <div class="payment__check">
+                                                            <div class="payment__select">
+                                                                <input type="radio" id="wallet">
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="payment__name">
+                                                                <label for="wallet">Phone Pe Wallet</label>
+                                                                <span>demo@phonepe</span>
+                                                            </div>
+                                                        </div>
+                                                        <img src="assets/img/phonepe.svg" alt="">
+                                                    </div>
+                                                    <div class="single__payment">
+                                                        <div class="payment__check">
+                                                            <div class="payment__select">
+                                                                <input type="radio" id="upipay">
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="payment__name">
+                                                                <label for="upipay">UPI Payments</label>
+                                                                <span>demo@upi</span>
+                                                            </div>
+                                                        </div>
+                                                        <img src="assets/img/upi-payment.svg" alt="">
+                                                    </div>
+                                                    <div class="enter__upi">
+                                                        <input type="text" placeholder="Enter your UPI ID">
+                                                        <button class="" type="button">Verify</button>
+                                                    </div>
+                                                    <p>Banking name: <span>ANJALI ARORA</span></p>
+                                                </div>
+                                            </form>
+                                            <div class="cash__pay">
+                                                <div class="paycash__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="paycash">
+                                                        <span></span>
+                                                    </div>
+                                                    <label for="paycash">Pay On Cash</label>
+                                                </div>
+                                                <img src="assets/img/pay-cash.svg" alt="">
+                                            </div>
+                                            <button type="button" class="btn__gradient py-proceed">Proceed to pay</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="btns btn__gradient">Proceed</a> -->
                         </div>
                     </div>
                 </div>

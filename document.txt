@@ -1,0 +1,330 @@
+<div class="service__repair service__repair3">
+                                <div class="service__repair__content">
+                                    <h5 class="title__repairs" onclick="titleRepairs2()">A/C Services & Repair</h5>
+                                    <div class="booking booking2">
+                                        <span class="star" onclick="add(this)"><i class="fa-solid fa-star"></i></span>
+                                        <span> 4.9 ( 8.2M bookings )</span>
+                                    </div>
+                                    <div class="sell sell2">
+                                        <span>4999 BD</span>
+                                        <h5>3999 BD</h5>
+                                        <div>
+                                            <img src="assets/img/clck.svg" alt="">
+                                            <span>1h 10m</span>
+                                        </div>
+                                    </div>
+                                    <div class="service__list__detail service__list__detail2">
+                                        <ul>
+                                            <li>• AC service with advanced foam-jet technology</li>
+                                            <li>• 1 service now, 2nd 90 days laterfor same AC
+                                            </li>
+                                        </ul>
+    
+    
+                                        <div class="modal fade" id="exampleModalToggle12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel12" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered detail__service">
+                                              <div class="modal-content detail-slide">
+                                                <div class="modal-header">
+                                                  <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                                </div>
+                                                <div class="modal-body detailB">
+                                                  
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                          <div class="carousel-item active">
+                                                            <img src="assets/img/repair-slide-img.png" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="assets/img/repair-slide-img.png" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="assets/img/repair-slide-img.png" class="d-block w-100" alt="...">
+                                                          </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                          <img src="assets/img/angle-left.svg" alt="">
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                            <img src="assets/img/angle-rights.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal__service__details">
+                                                        <h5>A/C Services Repair</h5>
+                                                        <div class="booking">
+                                                            <img src="assets/img/feather-star.svg" alt="">
+                                                            <span> 4.9 ( 8.2M bookings )</span>
+                                                        </div>
+                                                        <div class="sell__cart">
+                                                            <div class="sell">
+                                                                <span>4999 BD</span>
+                                                                <h5>3999 BD</h5>
+                                                                <div>
+                                                                    <img src="assets/img/clck.svg" alt="">
+                                                                    <span>1h 10m</span>
+                                                                </div>
+                                                            </div>
+    
+    
+    
+    
+                                                            <button class="btn__gradient add-to-cart" data-bs-target="#exampleModalToggle12" data-bs-toggle="modal" data-bs-dismiss="modal">Add to Cart</button>
+    
+    
+    
+                                                        </div>
+                                                        <h5>What Includes</h5>
+                                                        <ol>
+                                                            <li>Accurate inspection followed by repair quotation</li>
+                                                            <li>Adjustment of inspection fee (7599) in invoice, if UC repair service is availed</li>
+                                                            <li>AC repair using high-quality spare parts & tools</li>
+                                                            <li>Final check & cleanup</li>
+                                                        </ol>
+                                                        <h5>We Serve All Brands</h5>
+                                                        <div class="all__brnds">
+                                                            <img src="assets/img/brndimg.png" alt="">
+                                                        </div>
+                                                        <ol>
+                                                            <li>You're eligible for the 2nd service only if at least 90 days have passed since the 1st service.</li>
+                                                            <li>This service must be used for the same AC unit at the same location </li>
+                                                            <li>If you cancel the plan after using a service, a cancellation fee may apply</li>
+                                                        </ol>
+                                                        <h5>Reviews</h5>
+                                                        <div class="melvin__card">
+                                                            <div class="melvin__title">
+                                                                <h6>Melvin</h6>
+                                                                <div class="rating">
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span>4.9</span>
+                                                                </div>
+                                                            </div>
+                                                            <p>Jun 10, 2024 • For Split AC <br>
+                                                                Ganesh ji was a delight! Super professional, no loose talks! He came, did his work, <br> mentioned the issue with the AC and advised best practices.</p>
+                                                        </div>
+                                                        <div class="melvin__card">
+                                                            <div class="melvin__title">
+                                                                <h6>Melvin</h6>
+                                                                <div class="rating">
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span>4.9</span>
+                                                                </div>
+                                                            </div>
+                                                            <p>Jun 10, 2024 • For Split AC <br>
+                                                                Ganesh ji was a delight! Super professional, no loose talks! He came, did his work, <br> mentioned the issue with the AC and advised best practices.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="modal fade" id="exampleModalToggle13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel13" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered detail__service">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  
+                                                    <div class="detail__proceed">
+                                                        <div class="proceed__discount">
+                                                            <div class="proceed__slot">
+                                                                <h6>Full AC repair | Cleaning | Setting up</h6>
+                                                                <div class="sell">
+                                                                    <span>4999 BD</span>
+                                                                    <h5>3999 BD</h5>
+                                                                    <div>
+                                                                        <img src="assets/img/clck.svg" alt="">
+                                                                        <span>1h 10m</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="proceed__slot">
+                                                                <h6>What Includes</h6>
+                                                                <ol>
+                                                                    <li>Accurate inspection followed by repair quotation</li>
+                                                                    <li>Adjustment of inspection fee (7599) in invoice, if UC repair service is availed</li>
+                                                                    <li>AC repair using high-quality spare parts & tools</li>
+                                                                    <li>Final check & cleanup</li>
+                                                                </ol>
+                                                            </div>
+                                                            <div class="proceed__slot">
+                                                                <h6>Booking Slot</h6>
+                                                            </div>
+                                                            <div class="proceed__slot">
+                                                                <h6>Select service slot</h6>
+                                                                <p>Professional will arrive within this time</p>
+                                                                <div class="proceed__date">
+                                                                    <div class="proceed__date__card">
+                                                                        <span>09:00 AM - 01:00 PM</span>
+                                                                    </div>
+                                                                    <div class="proceed__date__card">
+                                                                        <span>01:00 PM - 05:00 PM</span>
+                                                                    </div>
+                                                                    <div class="proceed__date__card">
+                                                                        <span>05:00 PM - 09:00 PM</span>
+                                                                    </div>
+                                                                    <div class="proceed__date__card">
+                                                                        <span>09:00 PM - 01:00 AM</span>
+                                                                    </div>
+                                                                    <div class="proceed__date__card">
+                                                                        <span>09:00 PM - 01:00 AM</span>
+                                                                    </div>
+                                                                    <div class="proceed__date__card">
+                                                                        <span>09:00 PM - 01:00 AM</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="customer__card__field">
+                                                                <div class="customer__img__content">
+                                                                    <img src="assets/img/customar-icon5.svg" alt="">
+                                                                    <div>
+                                                                        <p>It’s an Emergency Booking</p>
+                                                                        <p class="last-p">For emergency bookings charges may apply - 500 BD</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <ul>
+                                                                <li><span>Item total</span><span>998 BD</span></li>
+                                                                <li><span>Taxes and Fee</span><span>89 BD</span></li>
+                                                                <li><span style="color: var(--textBlue);">Emergency fee</span><span>500 BD</span></li>
+                                                                <li><span>Pack discount</span><span>-150 BD</span></li>
+                                                            </ul>
+                                                            <div class="poceed__total">
+                                                                <div class="emargency__charge">
+                                                                    <h6>Total fees</h6>
+                                                                    <span>emergency charges</span>
+                                                                </div>
+                                                                <h6>5999 BD</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="modal-footer proceed__footer">
+                                                    <button type="button" class="btn__gradient" data-bs-dismiss="modal">Proceed</button>
+                                                    <button type="button" class="cenceld">Cancel</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <a class="txtGrdient" data-bs-toggle="modal" href="#exampleModalToggle13" role="button">View details</a>
+                                    </div>
+
+
+                                    <!-- <a href="#" class="txtGrdient">View details</a> -->
+
+
+
+
+
+
+
+ 
+
+                                </div>
+                                <div class="service__repair__img">
+                                    <div>
+                                        <a href="#" class="btns arrows-downs2" onclick="titleRepairs2()"><img src="assets/img/arrow-downs.svg" alt="">Add more service</a>
+                                    </div>
+                                    <img src="assets/img/repair-img.png" alt="" class="repairs-imgs2">
+
+
+<!-- Button trigger modal -->
+<a href="#" type="button" class="btns btn__gradient bookNow2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Book now
+  </a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered detail__service">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="detail__proceed">
+                  <div class="proceed__discount">
+                      <div class="proceed__slot">
+                          <h6>Full AC repair | Cleaning | Setting up</h6>
+                          <div class="sell">
+                              <span>4999 BD</span>
+                              <h5>3999 BD</h5>
+                              <div>
+                                  <img src="assets/img/clck.svg" alt="">
+                                  <span>1h 10m</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="proceed__slot">
+                          <h6>What Includes</h6>
+                          <ol>
+                              <li>Accurate inspection followed by repair quotation</li>
+                              <li>Adjustment of inspection fee (7599) in invoice, if UC repair service is availed</li>
+                              <li>AC repair using high-quality spare parts & tools</li>
+                              <li>Final check & cleanup</li>
+                          </ol>
+                      </div>
+                      <div class="proceed__slot">
+                          <h6>Booking Slot</h6>
+                      </div>
+                      <div class="proceed__slot">
+                          <h6>Select service slot</h6>
+                          <p>Professional will arrive within this time</p>
+                          <div class="proceed__date">
+                              <div class="proceed__date__card">
+                                  <span>09:00 AM - 01:00 PM</span>
+                              </div>
+                              <div class="proceed__date__card">
+                                  <span>01:00 PM - 05:00 PM</span>
+                              </div>
+                              <div class="proceed__date__card">
+                                  <span>05:00 PM - 09:00 PM</span>
+                              </div>
+                              <div class="proceed__date__card">
+                                  <span>09:00 PM - 01:00 AM</span>
+                              </div>
+                              <div class="proceed__date__card">
+                                  <span>09:00 PM - 01:00 AM</span>
+                              </div>
+                              <div class="proceed__date__card">
+                                  <span>09:00 PM - 01:00 AM</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="customer__card__field">
+                          <div class="customer__img__content">
+                              <img src="assets/img/customar-icon5.svg" alt="">
+                              <div>
+                                  <p>It’s an Emergency Booking</p>
+                                  <p class="last-p">For emergency bookings charges may apply - 500 BD</p>
+                              </div>
+                          </div>
+                      </div>
+                      <ul>
+                          <li><span>Item total</span><span>998 BD</span></li>
+                          <li><span>Taxes and Fee</span><span>89 BD</span></li>
+                          <li><span style="color: var(--textBlue);">Emergency fee</span><span>500 BD</span></li>
+                          <li><span>Pack discount</span><span>-150 BD</span></li>
+                      </ul>
+                      <div class="poceed__total">
+                          <div class="emargency__charge">
+                              <h6>Total fees</h6>
+                              <span>emergency charges</span>
+                          </div>
+                          <h6>5999 BD</h6>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="modal-footer proceed__footer">
+              <button type="button" class="btn__gradient" data-bs-dismiss="modal">Proceed</button>
+              <button type="button" class="cenceld">Cancel</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+                                    <!-- <a href="#" class="btns btn__gradient">Book now</a> -->
+                                </div>
+                            </div>

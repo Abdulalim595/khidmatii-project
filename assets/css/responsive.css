@@ -33,7 +33,23 @@
   :root {
     --f32 : 28px;
   }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
   
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
   .search__login {
     gap: 10px;
 }
@@ -65,7 +81,9 @@ div#seachField, a.login {
 .booking__card__img {
   height: 54px;
 }
-
+.arrows-downs, .arrows-downs2 {
+  font-size: 17px;
+}
 .footer__cards {
     gap: 50px;
 }
@@ -90,6 +108,7 @@ div#seachField, a.login {
     --f32 : 26px;
     --f24 : 20px
   }
+  
   .company__contact {
     display: none;
 }
@@ -153,23 +172,7 @@ div#seachField, a.login {
 
 /* SM Small Device :320px. */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 24px;
-  }
   
-  h4 {
-    font-size: 20px;
-  }
-  
-  h5 {
-    font-size: 18px;
-  }
   
   :root {
     --f32 : 24px;
@@ -237,6 +240,19 @@ a.body__arrow.btns.btn__gradient {
 }
 .booking__cards {
   grid-template-columns: repeat(3,1fr);
+}
+
+.service__repair2, .service__repair3 {
+  height: 125px;
+}
+
+.arrows-downs, .arrows-downs2 {
+  transform: translateY(-108px);
+  justify-content: start;
+}
+
+.arrowDownActive {
+  transform: scale(0) translateY(0px) !important;
 }
 }
 

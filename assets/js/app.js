@@ -94,6 +94,43 @@ $(document).ready(function () {
 
   
 });
+function add(x){
+  x.classList.toggle("add")
+}
+
+function titleRepairs(y){
+  let booking1 = document.querySelector('.booking1');
+  let sell1 = document.querySelector('.sell1');
+  let serviceListDetail1 = document.querySelector('.service__list__detail1');
+  let repairsImgs = document.querySelector('.repairs-imgs');
+  let bookNow = document.querySelector('.bookNow');
+  let serviceRepair2 = document.querySelector('.service__repair2');
+  let arrowDown = document.querySelector('.arrows-downs');
+  booking1.classList.toggle("bookingShow");
+  sell1.classList.toggle("sellActive");
+  serviceListDetail1.classList.toggle("service__list__detailActive");
+  repairsImgs.classList.toggle("repairs-imgActive");
+  bookNow.classList.toggle("bookNowActive");
+  serviceRepair2.classList.toggle("serviceRepairActive");
+  arrowDown.classList.toggle("arrowDownActive");
+}
+
+function titleRepairs2(z){
+  let booking1 = document.querySelector('.booking2');
+  let sell1 = document.querySelector('.sell2');
+  let serviceListDetail1 = document.querySelector('.service__list__detail2');
+  let repairsImgs = document.querySelector('.repairs-imgs2');
+  let bookNow = document.querySelector('.bookNow2');
+  let serviceRepair2 = document.querySelector('.service__repair3');
+  let arrowDown = document.querySelector('.arrows-downs2');
+  booking1.classList.toggle("bookingShow");
+  sell1.classList.toggle("sellActive");
+  serviceListDetail1.classList.toggle("service__list__detailActive");
+  repairsImgs.classList.toggle("repairs-imgActive");
+  bookNow.classList.toggle("bookNowActive");
+  serviceRepair2.classList.toggle("serviceRepairActive");
+  arrowDown.classList.toggle("arrowDownActive");
+}
 
 
 let login = document.querySelector('.login');
@@ -101,3 +138,8 @@ let accountCard = document.querySelector('.account-card');
 login.addEventListener('click', () => {
   accountCard.classList.toggle('shows')
 })
+
+function moreOffers(){
+  let cartCardList = document.querySelector('.cart-card-list')
+  cartCardList.classList.toggle('cartList')
+}

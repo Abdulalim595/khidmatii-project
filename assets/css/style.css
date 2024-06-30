@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 :root{
   /* color */
@@ -1140,7 +1140,32 @@ section.leadership__area {
   display: flex;
   align-items: center;
   gap: 9px;
-  margin: 10px 0px 16px;
+  padding-top: 8px;
+  margin: 8px 0px 0px;
+  /* height: 0px; */
+  border-top: 1px dashed var(--stroke, #E0E0E0);
+}
+.booking1,.booking2 {
+  visibility: hidden;
+  opacity: 0;
+}
+.bookingShow {
+  visibility: visible;
+  opacity: 1;
+}
+.booking span:last-child {
+  color: var(--textBlue);
+}
+.star {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradientColor);
+  font-size: 20px;
+  transition: 0s;
+}
+.add{
+  color: #FF830F;
+
 }
 
 .booking img {
@@ -1152,7 +1177,9 @@ section.leadership__area {
   grid-template-columns: repeat(3,1fr);
   gap: 22px;
 }
-
+.service__repair__content h5 {
+  cursor: pointer;
+}
 .booking__card span {
   margin-top: 8px;
   display: block;
@@ -1208,17 +1235,29 @@ section.leadership__area {
   gap: 26px;
   margin-top: 8px;
   margin-bottom: 28px;
+  overflow: hidden;
 }
-
+.service__repair2,.service__repair3 {
+  height: 82px;
+  transition: .5s linear;
+}
+.serviceRepairActive {
+  height: auto !important;
+  transition: .5s linear;
+}
 .sell {
   display: flex;
   align-items: center;
   gap: 8px;
-  border-bottom: 1px dashed var(--stroke, #E0E0E0);
-  padding-bottom: 8px;
+  margin-top: 10px;
   margin-bottom: 8px;
 }
-
+.sell1,.sell2 {
+  margin-top: -38px;
+}
+.sellActive{
+  margin-top: 10px;
+}
 .sell div img {
   width: 18px;
 }
@@ -1239,12 +1278,20 @@ section.leadership__area {
 .sell div span {
   font-size: 12px;
 }
-
-.service__repair__content > h5 {
-  border-bottom: 1px dashed var(--stroke, #E0E0E0);
-  padding-bottom: 8px;
+.service__list__detail {
+  padding-top: 8px;
+  border-top: 1px dashed var(--stroke, #E0E0E0);
 }
-
+.service__list__detail1,.service__list__detail2 {
+  transform: translateY(90px);
+  opacity: 0;
+  visibility: hidden;
+}
+.service__list__detailActive {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
 .service__repair__content ul li {
   font-size: 14px;
 }
@@ -1256,7 +1303,13 @@ section.leadership__area {
 .service__repair__content a {
   font-weight: 600;
 }
+.repairs-imgs,.repairs-imgs2 {
+  transform: translateY(200px);
+}
 
+.repairs-imgActive {
+  transform: translateY(0px);
+}
 .service__repair__img > a {
   width: 132px;
   height: 35px;
@@ -1267,7 +1320,16 @@ section.leadership__area {
   box-shadow: 5px 5px 4px 0px #FFFFFF40 inset;
   /* box-shadow: 0px 2px 16px 0px #00000029; */
 }
-
+.bookNow,.bookNow2 {
+  transform: translateX(30px);
+  opacity: 0;
+  visibility: hidden;
+}
+.bookNowActive{
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+}
 .repairs__cards {
   display: flex;
   flex-direction: column;
@@ -1288,15 +1350,21 @@ section.leadership__area {
   padding: 10px 22px;
   background: #fff;
 }
-
-.repairs__card a {
+.service__repair__img > .arrroDwn {
+  height: 0px;
+}
+.arrows-downs,.arrows-downs2 {
+  display: flex;
   flex-shrink: 0;
   gap: 4px;
   font-size: 18px;
   color: var(--textBlue);
+  transform: translateY(16px);
 }
-
-.repairs__card a img {
+.arrowDownActive {
+  transform: translateY(-130px);
+}
+.arrows-downs img,.arrows-downs2 img {
   width: 24px;
 }
 
@@ -1315,8 +1383,25 @@ section.leadership__area {
   border-radius: 8px;
   border: 1px solid var(--stroke, #E0E0E0);
   padding: 11px 16px;
+  overflow: hidden;
 }
 
+.service__cart__card2 {
+  padding-bottom: 0px;
+}
+
+.offer__more {
+  background: #fff;
+  padding: 15px 0px;
+  position: relative;
+}
+
+ol.cart-card-list {
+  height: 35px;
+}
+.cartList {
+  height: auto !important;
+}
 .cart__title {
   display: flex;
   align-items: center;
@@ -1349,10 +1434,11 @@ section.leadership__area {
   margin-bottom: 8px;
 }
 
-.service__cart__card a {
+.service__cart__card .more-offers {
   width: 132px;
   height: 32px;
   margin: 0 auto;
+  cursor: pointer;
 }
 ol {
   list-style: disc;
@@ -1360,7 +1446,13 @@ ol {
 }
 .service__cart__card ol {
   margin-bottom: 15px;
-  padding: 0px 20px;
+  padding-right: 8px;
+  list-style: none;
+}
+.service__cart__card ol li {
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  margin-bottom: 8px;
+  padding: 0px 15px 8px;
 }
 section.service__application {
   margin-bottom: 300px;

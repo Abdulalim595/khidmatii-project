@@ -1870,10 +1870,12 @@ button.carousel-control-prev {
 
 .proceed__slot h6 {
   margin-bottom: 8px;
+  text-align: start;
 }
 
 .proceed__slot {
   margin-bottom: 12px;
+  text-align: start;
 }
 .btns__proceed {
   display: flex;

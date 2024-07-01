@@ -329,9 +329,68 @@
                                     </div> 
                                     <!-- <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button> -->
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <div class="modal fade" id="exampleModalToggles" aria-hidden="true" aria-labelledby="exampleModalToggleLabels" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                            <div class="modal-body">
+                                                <div class="login__title write-title">
+                                                    <div class="proceed__slot">
+                                                      <h6>Booking Slot</h6>
+                                                      <div class="btns__proceed">
+                                                      <button class="btns">mm/dd/yyyy</button>
+                                                      <button class="btns" data-bs-target="#exampleModalToggle2s" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="assets/img/custom-calender.svg" alt=""></button>
+                                                      </div>
+                                                    </div>
+                                                    <div class="proceed__slot">
+                                                        <h6>Select service slot</h6>
+                                                        <p>Professional will arrive within this time</p>
+                                                        <div class="proceed__date">
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 AM - 01:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>01:00 PM - 05:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>05:00 PM - 09:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal fade" id="exampleModalToggle2s" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2s" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content modal-content-calender">
+                                            <div data-bs-toggle="calendar" id="example">
+                                                2
+                                                  ...
+                                                3
+                                                </div>
+                                                
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <a class="btns write-btn" data-bs-toggle="modal" href="#exampleModalToggles" role="button"><img src="assets/img/write.svg" alt=""></a>
+
+
+                                    <!-- <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                         <img src="assets/img/write.svg" alt="">
-                                    </button>
+                                    </button> -->
                                     
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -343,7 +402,16 @@
                                               <div class="modal-body">
                                                 
                                                   <div class="login__title write-title">
-                                                      <h5>Select slot</h5>
+                                                      <div class="proceed__slot">
+                                                        <h6>Booking Slot</h6>
+                                                        <div class="btns__proceed">
+                                                        <button class="btns">mm/dd/yyyy</button>
+                                                        <button class="btns" data-bs-target="#exampleModalToggle2s" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="assets/img/custom-calender.svg" alt=""></button>
+                                                        </div>
+                                                      </div>
+                                                      <div class="modal fade" id="exampleModalToggle2s" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2s" tabindex="-1">
+                                        
+                                                      </div>
                                                   </div>
                                                   <div class="proceed__slot">
                                                     <h6>Select service slot</h6>
@@ -676,14 +744,30 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-  <script src="simpleParallax.js"></script>
+  <script src="assets/js/jquery.bs.calendar.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <script>
+    $('#example').bsCalendar({
+ 
+});
+
+$('#example').bsCalendar('refresh');
+$('#example')
+  .on('init', function (e) {})
+  .on('change-day', function (e, date, events) {})
+  .on('events-loaded', function (e, events) {})
+  .on('show-event-list', function (e, events) {})
+  .on('shown-event-list', function (e, events) {})
+  .on('click-current-month', function (e) {})
+  .on('click-prev-month', function (e) {})
+  .on('click-next-month', function (e) {})
+  .on('change-month', function (e) {})
+  </script>
   <script>
     $('select').niceSelect();
   </script>

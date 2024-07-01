@@ -328,3 +328,30 @@
                                     <!-- <a href="#" class="btns btn__gradient">Book now</a> -->
                                 </div>
                             </div>
+
+
+
+
+
+
+                            
+                                <div class="proceed__slot">
+                                    <h6>Booking Slot</h6>
+                                    <div class="btns__proceed">
+                                    <button class="btns">mm/dd/yyyy</button>
+                                    <button class="btns" data-bs-target="#exampleModalToggle2s" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="assets/img/custom-calender.svg" alt=""></button>
+                                    </div>
+                                </div>
+
+                                 <div class="modal fade" id="exampleModalToggle2s" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2s" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content modal-content-calender">
+                                            <div data-bs-toggle="calendar" id="example">
+                                                2
+                                                  ...
+                                                3
+                                                </div>
+                                                
+                                          </div>
+                                        </div>
+                                      </div>

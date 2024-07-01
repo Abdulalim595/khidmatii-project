@@ -124,7 +124,9 @@ div#seachField, a.login {
   align-items: start;
   gap: 18px;
 }
-
+.team__card__img {
+  width: 100%;
+}
 .team__card__content ul {
   row-gap: 8px;
   column-gap: 22px;
@@ -241,6 +243,11 @@ a.body__arrow.btns.btn__gradient {
   .offcanvas-area {
     width: 100%;
   }
+  .modal__service__details .sell__cart {
+    flex-direction: column;
+    gap: 10px;
+}
+
   .service__repair {
     flex-direction: column;
 }

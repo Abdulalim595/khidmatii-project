@@ -133,11 +133,11 @@ function titleRepairs2(z){
 }
 
 
-let login = document.querySelector('.login');
-let accountCard = document.querySelector('.account-card');
-login.addEventListener('click', () => {
-  accountCard.classList.toggle('shows')
-})
+// let login = document.querySelector('.login');
+// let accountCard = document.querySelector('.account-card');
+// login.addEventListener('click', () => {
+//   accountCard.classList.toggle('shows')
+// })
 
 function moreOffers(){
   let cartCardList = document.querySelector('.cart-card-list')
@@ -148,3 +148,25 @@ function paymentBtn(){
   let paymentMethodCard = document.querySelector('.payment__method__card');
   paymentMethodCard.classList.toggle("paymentActive")
 }
+
+function searchItem(){
+  let searchID =document.getElementById('searchID');
+  let mostSearch = document.querySelector('.most__search');
+  let screenOverlay = document.querySelector('.screen__overlay');
+  let login = document.querySelector('.login');
+  let accountCard = document.querySelector('.account-card');
+  
+  login.addEventListener('click', () => {
+    accountCard.classList.toggle('shows')
+    mostSearch.classList.remove('searchActive');
+  })
+  
+  searchID.addEventListener('click', () => {
+    mostSearch.classList.toggle('searchActive');
+    accountCard.classList.remove('shows')
+  })
+  
+  
+}
+
+searchItem()

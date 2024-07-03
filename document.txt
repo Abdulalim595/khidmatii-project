@@ -355,3 +355,350 @@
                                           </div>
                                         </div>
                                       </div>
+
+                                      border-gradient
+
+
+
+
+
+
+
+
+
+
+                                      <div class="customars__details">
+                            <div class="customer__card">
+                                <h6>Customer details</h6>
+                                <div class="customer__card__field">
+                                    <div class="customer__img__content">
+                                        <img src="assets/img/customar-icon1.svg" alt="">
+                                        <div>
+                                            <p>Ajay Tripathy - +91 1234567890</p>
+                                        </div>
+                                    </div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <img src="assets/img/write.svg" alt="">
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                                  <div class="login__title write-title">
+                                                      <h5>Customer details</h5>
+                                                      <div class="customer__card__field">
+                                                        <div class="customer__img__content">
+                                                            <img src="assets/img/customar-icon1.svg" alt="">
+                                                            <div>
+                                                                <p>Ajay Tripathy - +91 1234567890</p>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="addnew">
+                                                        <span>Add new</span>
+                                                      </div>
+                                                  </div>
+                                                  <form action="/action_page.php" class="form-customer">
+                                                      <input type="text" placeholder="Name*">
+                                                      <input type="tel" placeholder="Mobile number">
+                                                      <a href="#">Forget password ?</a>
+                                                      <button type="button" class="btn__gradient" data-bs-dismiss="modal">Save details</button>
+                                                  </form>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="btns"><img src="assets/img/write.svg" alt=""></a> -->
+                                </div>
+                            </div>
+                            <div class="customer__card">
+                                <h6>Booking address</h6>
+                                <div class="customer__card__field">
+                                    <div class="customer__img__content">
+                                        <img src="assets/img/customar-icon2.svg" alt="">
+                                        <div>
+                                            <p>Ameerpet, Begumpet, Hyderabad-HB2, 500038</p>
+                                        </div>
+                                    </div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                        <img src="assets/img/write.svg" alt="">
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                                  <div class="login__title write-title">
+                                                      <h5>Address</h5>
+                                                      <div class="customer__card__field">
+                                                        <div class="customer__img__content">
+                                                            <img src="assets/img/customar-icon1.svg" alt="">
+                                                            <div>
+                                                                <p>Ameerpet, Begumpet, Hyderabad-HB2, 500038</p>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="addnew">
+                                                        <span>Add new</span>
+                                                      </div>
+                                                  </div>
+                                                  <form action="/action_page.php" class="form-customer">
+                                                      <div class="inputs__customers">
+                                                        <div class="customer__state">
+                                                            <input type="text" placeholder="Pincode*">
+                                                            <input type="text" placeholder="State*">
+                                                        </div>
+                                                        <div class="use-location">
+                                                            <div class="my-location">
+                                                                <img src="assets/img/use-location.svg" alt="">
+                                                                <span>Use my location</span>
+                                                            </div>
+                                                            <input type="text" placeholder="City*">
+                                                        </div>
+                                                      </div>
+                                                      <input type="text" placeholder="House no. Building Name**">
+                                                      <input type="text" placeholder="Road Name, Area, Colony*">
+                                                      <input type="text" placeholder="Additional landmarks">
+                                                      <div class="home__office">
+                                                        <span>Type of address</span>
+                                                        <div class="home__office__btn">
+                                                            <a href="#">Home</a>
+                                                            <a href="#">Office</a>
+                                                        </div>
+                                                      </div>
+                                                      <button type="button" class="btn__gradient" data-bs-dismiss="modal">Save details</button>
+                                                  </form>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="btns"><img src="assets/img/write.svg" alt=""></a> -->
+                                </div>
+                            </div>
+                            <div class="customer__card">
+                                <h6>Slot</h6>
+                                <div class="customer__card__field">
+                                    <div class="customer__img__content">
+                                        <img src="assets/img/customar-icon3.svg" alt="">
+                                        <div>
+                                            <p>Date : 15-06-2024  Time : 12:00:00 pm</p>
+                                        </div>
+                                    </div> 
+                                    <!-- <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button> -->
+                                    <!-- Button trigger modal -->
+                                    <div class="modal fade" id="exampleModalToggles" aria-hidden="true" aria-labelledby="exampleModalToggleLabels" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                            <div class="modal-body">
+                                                <div class="login__title write-title">
+                                                    <div class="proceed__slot">
+                                                      <h6>Booking Slot</h6>
+                                                      <div class="btns__proceed">
+                                                      <button class="btns">mm/dd/yyyy</button>
+                                                      <button class="btns" data-bs-target="#exampleModalToggle2s" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="assets/img/custom-calender.svg" alt=""></button>
+                                                      </div>
+                                                    </div>
+                                                    <div class="proceed__slot">
+                                                        <h6>Select service slot</h6>
+                                                        <p>Professional will arrive within this time</p>
+                                                        <div class="proceed__date">
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 AM - 01:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>01:00 PM - 05:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>05:00 PM - 09:00 PM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                            <div class="proceed__date__card">
+                                                                <span>09:00 PM - 01:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal fade" id="exampleModalToggle2s" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2s" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content modal-content-calender">
+                                            <div data-bs-toggle="calendar" id="example">
+                                                2
+                                                  ...
+                                                3
+                                                </div>
+                                                
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <a class="btns write-btn" data-bs-toggle="modal" href="#exampleModalToggles" role="button"><img src="assets/img/write.svg" alt=""></a>
+
+
+                                    <!-- <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <img src="assets/img/write.svg" alt="">
+                                    </button> -->
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                                  <div class="login__title write-title">
+                                                      <div class="proceed__slot">
+                                                        <h6>Booking Slot</h6>
+                                                        <div class="btns__proceed">
+                                                        <button class="btns">mm/dd/yyyy</button>
+                                                        <button class="btns" data-bs-target="#exampleModalToggle2s" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="assets/img/custom-calender.svg" alt=""></button>
+                                                        </div>
+                                                      </div>
+                                                      <div class="modal fade" id="exampleModalToggle2s" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2s" tabindex="-1">
+                                        
+                                                      </div>
+                                                  </div>
+                                                  <div class="proceed__slot">
+                                                    <h6>Select service slot</h6>
+                                                    <p>Professional will arrive within this time</p>
+                                                    <div class="proceed__date">
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 AM - 01:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>01:00 PM - 05:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>05:00 PM - 09:00 PM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                        <div class="proceed__date__card">
+                                                            <span>09:00 PM - 01:00 AM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn__gradient slots-btn" data-bs-dismiss="modal">Book slot</button>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="customer__card">
+                                <h6>Payment method</h6>
+                                <div class="customer__card__field">
+                                    <div class="customer__img__content">
+                                        <img src="assets/img/customar-icon4.svg" alt="">
+                                        <div>
+                                            <p>COD( Cash On Delivery )</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btns write-btn" onclick="paymentBtn()"><img src="assets/img/write.svg" alt=""></a>
+                                </div>
+                                <div class="payment__method__card">
+                                    <form action="/action_page.php">
+                                        <div class="payment__method">
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="paytm">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="paytm">Paytm Wallet</label>
+                                                        <span>demo@paytm</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/paytm.svg" alt="">
+                                            </div>
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="wallet">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="wallet">Phone Pe Wallet</label>
+                                                        <span>demo@phonepe</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/phonepe.svg" alt="">
+                                            </div>
+                                            <div class="single__payment">
+                                                <div class="payment__check">
+                                                    <div class="payment__select">
+                                                        <input type="radio" id="upipay">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="payment__name">
+                                                        <label for="upipay">UPI Payments</label>
+                                                        <span>demo@upi</span>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/upi-payment.svg" alt="">
+                                            </div>
+                                            <div class="enter__upi">
+                                                <input type="text" placeholder="Enter your UPI ID">
+                                                <button class="" type="button">Verify</button>
+                                            </div>
+                                            <p>Banking name: <span>ANJALI ARORA</span></p>
+                                        </div>
+                                    </form>
+                                    <div class="cash__pay">
+                                        <div class="paycash__check">
+                                            <div class="payment__select">
+                                                <input type="radio" id="paycash">
+                                                <span></span>
+                                            </div>
+                                            <label for="paycash">Pay On Cash</label>
+                                        </div>
+                                        <img src="assets/img/pay-cash.svg" alt="">
+                                    </div>
+                                    <button type="button" class="btn__gradient">Select</button>
+                                </div>
+                            </div>
+                            <div class="customer__card">
+                                <h6>Emergency booking</h6>
+                                <div class="customer__card__field">
+                                    <div class="customer__img__content">
+                                        <img src="assets/img/customar-icon5.svg" alt="">
+                                        <div>
+                                            <p>It’s an Emergency Booking</p>
+                                            <p class="last-p">For emergency bookings charges may apply - 500 BD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>

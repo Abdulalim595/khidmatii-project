@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+  border-radius: 8px;
 }
 :root{
   /* color */
@@ -32,6 +33,9 @@
   --f24 : 24px;
   --f32 : 32px;
 
+}
+.modal {
+  z-index: 999999;
 }
 .txtGrdient {
   -webkit-background-clip: text;
@@ -92,10 +96,12 @@ h4 {
 
 h5 {
   font-size: 20px;
+  margin-bottom: 6px;
 }
 
 h6 {
   font-size: 16px;
+  margin-bottom: 4px;
 }
 p {
   margin: 0;
@@ -122,6 +128,22 @@ a {
 .btn__gradient:hover {
   color: #fff;
   box-shadow: -6px -6px 16px 0px #00000040 inset;
+}
+.border-gradient {
+  position: relative;
+  z-index: 1;
+  background-image: var(--gradientColor);
+}
+.border-gradient:after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+.mb-0 {
+  margin: 0;
 }
 img {
   width: 100%;
@@ -1579,7 +1601,16 @@ ol {
 section.service__application {
   margin-bottom: 300px;
 }
+.emergency-booking__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
+.emergency-booking__check img {
+  width: 19px;
+}
 .checkout__title.title {
   display: flex;
   align-items: center;
@@ -1601,13 +1632,87 @@ section.service__application {
 }
 
 .customars__details {
-  padding: 11px 40px 11px 24px;
+  padding: 16px 8px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 37px;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
 }
 
+.customars__details form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+  color: var(--textBlue);
+  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+}
+
+.customars__details form button img {
+  width: 16px;
+}
+
+.customars__details form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.checkout__input {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 29px;
+}
+
+.checkout__input input {
+  height: 48px;
+  padding: 6px;
+  border: 1px solid var(--disabled, #A3A3A3);
+  width: 100%;
+}
+
+.checkout__input__btn {
+  display: flex;
+  gap: 22px;
+  height: 48px;
+}
+
+.checkout__input__btn button button {
+  height: 100%;
+}
+
+.checkout__input__btn button {
+  width: 100%;
+  height: 100%;
+}
+
+.customars__details form * {
+  font-size: 14px;
+  color: var(--textGray);
+  border-radius: 8px;
+}
+
+.checkout__input__btn button:last-child {
+  border: 1px solid var(--bwq, #686868);
+  background: #fff;
+}
+
+.checkout__input__btn button:first-child {
+  background: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%);
+  color: #fff;
+}
+
+.emergency-booking__check h6 {
+  margin-bottom: 0px;
+}
+
+.customars__details form .checkout__input.address {
+  grid-template-columns: repeat(1,1fr);
+}
 .customer__card__field img {
   width: 24px;
 }
@@ -1675,7 +1780,7 @@ img.clck {
   z-index: 2;
 }
 
-.pricing__card:after, .apply__discount:after {
+.customars__details:after, .pricing__card:after, .apply__discount:after {
   content: '';
   position: absolute;
   inset: 1px;
@@ -2256,6 +2361,50 @@ form.form-customer a {
   border-radius: 50%;
 }
 /*===================== SERVICE-AREA CSS AREA END =====================*/
+
+
+
+
+
+
+
+/*===================== BOOKING-AREA CSS AREA START =====================*/
+.booking_wrap {
+  max-width: 670px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.booking_wrap .booking__card span {
+  text-align: start;
+  color: var(--clr);
+  margin-bottom: 9px;
+}
+
+.booking__card {
+  position: relative;
+  border: 1px solid var(--stroke, #E0E0E0);
+  padding: 11px 24px 11px 16px;
+}
+
+.booking__card button {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  width: 7.8px;
+}
+
+.booking__card a {
+  position: absolute;
+  inset: 0px;
+  opacity: 0;
+  z-index: 1;
+}
+/*===================== BOOKING-AREA CSS AREA END =====================*/
 
 
 

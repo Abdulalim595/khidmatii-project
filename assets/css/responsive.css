@@ -237,12 +237,19 @@ a.body__arrow.btns.btn__gradient {
 .customer__card__field {
   padding: 10px;
 }
+.booking_wrap {
+  gap: 15px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .offcanvas-area {
     width: 100%;
   }
+  .checkout__input {
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+}
   .modal__service__details .sell__cart {
     flex-direction: column;
     gap: 10px;

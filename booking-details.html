@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking-page</title>
+  <title>Booking-details</title>
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -46,7 +46,7 @@
 
   <div class="offcanvas-overlay"></div>
   <!-- ===================== OFFCANVAS AREA END ===================== -->
-
+   
   <!-- ===================== ALL-CONTACT AREA START ===================== -->
   <div class="company__contact">
     <a href="#"><img src="assets/img/phone.svg" alt=""></a>
@@ -57,7 +57,7 @@
     <a href="#"><img src="assets/img/facebook.svg" alt=""></a>
   </div>
   <!-- ===================== ALL-CONTACT AREA END ===================== -->
-
+   
   <!-- ===================== HEADER AREA START ===================== -->
    <div class="welcome">
     <h6>Welcome Offer 10 % Off</h6>
@@ -201,38 +201,60 @@
     <!-- ===================== HERO AREA START ===================== -->
      <div class="section service__checkout">
         <div class="container">
-            <div class="checkout__title category__title title">
-                <img src="assets/img/bookings.svg" alt="">
-                <h4>Check Out</h4>
+            <div class="checkout__title category__title booking__title title">
+                <a href="booking-page.html"><img src="assets/img/arrow-square-left.svg" alt=""></a>
+                <div class="booking__detail">
+                    <h5>Full AC repair | Cleaning | Setting up</h5>
+                    <span>Fri, May 3 at 09.30 AM</span>
+                </div>
             </div>
-            <div class="booking_wrap">
-                <div class="booking__card">
-                    <span style="--clr:#1D8E36">BOOKED</span>
-                    <h6>Full AC repair | Cleaning | Setting up</h6>
-                    <p>Fri, May 3 at 09.30 AM</p>
-                    <a href="booking-details.html"></a>
-                    <button><img src="assets/img/angle-rights.svg" alt=""></button>
-                </div>
-                <div class="booking__card">
-                    <span style="--clr:#E13A43">BOOKED</span>
-                    <h6>Full AC repair | Cleaning | Setting up</h6>
-                    <p>Fri, May 3 at 09.30 AM</p>
-                    <a href="#"></a>
-                    <button><img src="assets/img/angle-rights.svg" alt=""></button>
-                </div>
-                <div class="booking__card">
-                    <span style="--clr:#1D8E36">BOOKED</span>
-                    <h6>Full AC repair | Cleaning | Setting up</h6>
-                    <p>Fri, May 3 at 09.30 AM</p>
-                    <a href="#"></a>
-                    <button><img src="assets/img/angle-rights.svg" alt=""></button>
-                </div>
-                <div class="booking__card">
-                    <span style="--clr:#1D8E36">BOOKED</span>
-                    <h6>Full AC repair | Cleaning | Setting up</h6>
-                    <p>Fri, May 3 at 09.30 AM</p>
-                    <a href="#"></a>
-                    <button><img src="assets/img/angle-rights.svg" alt=""></button>
+            <div class="booking_detail_wrap">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="booking__success">
+                            <div class="booking__success__title">
+                                <img src="assets/img/tick-circle.svg" alt="">
+                                <h6>BOOKED SUCESSFULLY</h6>
+                            </div>
+                            <h5>Full AC repair | Cleaning | Setting up</h5>
+                            <span>Your booking was successful</span>
+                            <span>On Thu, May 2nd at 8:38 PM</span>
+                            <button class="btn__gradient">Book again</button>
+                        </div>
+                        <div class="download__invoice">
+                            <div class="download__img">
+                                <img src="assets/img/paper-doller.svg" alt="">
+                                <span>Download invoice</span>
+                            </div>
+                            <a href="#"><img src="assets/img/inbox-download.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="booking__success booking__success2">
+                            <div class="booking__success__title">
+                                <h5>Booking details</h5>
+                            </div>
+                            <div class="booking__detail__card">
+                                <img src="assets/img/Paper_light.svg" alt="">
+                                <div class="amount__pay">
+                                    <p>Amount paid : <span>937 BD</span></p>
+                                    <p>Payment method : <span>COD</span></p>
+                                </div>
+                            </div>
+                            <div class="booking__detail__card">
+                                <img src="assets/img/booking-location.svg" alt="">
+                                <div class="amount__pay">
+                                    <span>Ameerpet, Begumpet, Hyderabad-HB2, 500038</span>
+                                </div>
+                            </div>
+                            <div class="booking__detail__card">
+                                <img src="assets/img/Watch_fill.svg" alt="">
+                                <div class="amount__pay">
+                                    <span>Date : 15-06-2024 Time : 12:00:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

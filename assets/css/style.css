@@ -1042,6 +1042,7 @@ section.team__area {
   padding: 20px;
   overflow: hidden;
   gap: 16px;
+  border-radius: 0px;
 }
 
 .team__card2 {display: grid;grid-template-columns: repeat(2,1fr);gap: 24px;}
@@ -2403,6 +2404,106 @@ form.form-customer a {
   inset: 0px;
   opacity: 0;
   z-index: 1;
+}
+
+.booking__success {
+  padding: 16px;
+  border: 1px solid var(--stroke, #E0E0E0);
+}
+
+.booking__success span {
+  display: block;
+  color: var(--textGray);
+}
+
+.booking__success__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+
+.booking__success__title img {
+  width: 24px;
+}
+
+.booking__success__title h6 {color: #52BD8B;margin-bottom: 0px;}
+
+.booking__success button {
+  width: 100px;
+  height: 42px;
+  margin-top: 16px;
+}
+
+.booking__success2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.download__invoice {
+  padding: 13px 24px;
+  border: 1px solid var(--stroke, #E0E0E0);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download__img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download__img img,.booking__detail__card img {
+  width: 24px;
+}
+
+.booking__detail__card > .amount__pay {
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 0px;
+}
+
+.booking__detail__card > .amount__pay p span {
+  display: inline-block;
+}
+
+.booking__detail__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+}
+
+.booking__title img {
+  width: 31px;
+}
+
+.booking__detail h5 {
+  font-weight: 600;
+}
+
+.booking__detail span {
+  color: var(--textGray);
+}
+
+.booking__detail__card > .amount__pay p:last-child {
+  color: var(--textGray);
+}
+
+.booking__detail__card > .amount__pay > span {
+  font-size: 12px;
+}
+
+.booking__success2 .booking__detail__card:last-child {
+  border: none;
 }
 /*===================== BOOKING-AREA CSS AREA END =====================*/
 

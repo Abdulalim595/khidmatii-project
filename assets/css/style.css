@@ -471,9 +471,6 @@ button.registers:after {
   padding: 12px;
   box-shadow: 0px 2px 4px 0px #5959591A;
   box-shadow: 2px 7px 7px 0px #59595917;
-  /* box-shadow: 4px 16px 10px 0px #5959590D; */
-  /* box-shadow: 7px 28px 12px 0px #59595903; */
-  /* box-shadow: 12px 44px 13px 0px #59595900; */
   position: absolute;
   top: 100%;
   right: 0px;
@@ -511,6 +508,7 @@ button.registers:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0px;
 }
 
 .header__wrap {
@@ -558,15 +556,6 @@ button.registers:after {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #fff;
-}
-
-.welcome {
-  background: linear-gradient(298.19deg, #1292C8 18.28%, #52BD8C 83.92%);
-  text-align: center;
-  height: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header__wrap {
@@ -907,7 +896,7 @@ section.contact__form {
   background: #fff;
 }
 
-form button {
+form > button {
   width: 154px;
   height: 44px;
   margin: 0 auto;
@@ -1639,7 +1628,7 @@ section.service__application {
   gap: 15px;
   margin-bottom: 5px;
   position: relative;
-  z-index: 2;
+  z-index: 99;
   border-radius: 8px;
   background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
 }
@@ -1978,7 +1967,11 @@ button.carousel-control-prev {
   margin-bottom: 8px;
   text-align: start;
 }
-
+.proceed__slot h4 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--textDark);
+}
 .proceed__slot {
   margin-bottom: 12px;
   text-align: start;
@@ -2081,7 +2074,10 @@ button.carousel-control-prev {
 .customer__img__content p {
   font-size: 14px;
 }
-
+.customer__img__content h6 {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
 .proceed__discount .customer__card__field {
   max-width: 349px;
   width: 100%;

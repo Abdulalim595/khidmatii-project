@@ -35,7 +35,7 @@
 
 }
 .modal {
-  z-index: 999999;
+  z-index: 999999999;
 }
 .txtGrdient {
   -webkit-background-clip: text;
@@ -193,7 +193,7 @@ main {
 	left: -100%;
 	height: 100%;
 	width: 318px;
-	z-index: 99999999;
+	z-index: 999999999999999999999999;
 	padding-top: 70px;
 	background: #FFFFFF;
 	-webkit-transition: 0.4s;
@@ -352,6 +352,9 @@ ul.toggle__menu {
   font-size: var(--f24);
   margin-left: 10px;
 }
+.header__area.active {
+  z-index: 0;
+}
 /*===================== OFFCANVAS CSS AREA END =====================*/
 
 /*===================== HEADER CSS AREA START =====================*/
@@ -414,8 +417,8 @@ ul.toggle__menu {
 }
 .modal-header button {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -10px;
+  right: -10px;
   width: 29px;
   height: 29px;
   border-radius: 5px;
@@ -432,7 +435,6 @@ ul.toggle__menu {
 }
 .modal-content {
   border-radius: 16px !important;
-  overflow: hidden;
   border: none !important;
 }
 .detail-slide {
@@ -459,8 +461,8 @@ button.registers:after {
   background: #fff;
 }
 .modal-backdrop {
-  z-index: -1;
-  background-color: #fff;
+  z-index: 99999;
+  background-color: #000;
 }
 .login-area,.search__login {
   position: relative;
@@ -732,7 +734,7 @@ a.login:after {
 }
 .header__area {
   position: relative;
-  z-index: 999999;
+  z-index: 9999999;
 }
 .searchActive {
   display: block;
@@ -770,6 +772,21 @@ a.login:after {
   border-radius: 7px;
   z-index: -1;
   background: #fff;
+}
+.header__area.scroll-header {
+  position: fixed !important;
+  background: #fff !important;
+  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  box-shadow: 2px 19px 42px 0px #5B9CB91A;
 }
 /*===================== HEADER CSS AREA END =====================*/
 .company__contact {
@@ -1628,7 +1645,7 @@ section.service__application {
   gap: 15px;
   margin-bottom: 5px;
   position: relative;
-  z-index: 99;
+  z-index: 999999;
   border-radius: 8px;
   background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
 }
@@ -1767,7 +1784,7 @@ img.clck {
   border-radius: 8px;
   position: relative;
   background-image: var(--gradientColor);
-  z-index: 2;
+  z-index: 1;
 }
 
 .customars__details:after, .pricing__card:after, .apply__discount:after {
@@ -1866,10 +1883,13 @@ img.clck {
 
 
 
-
+.modal-dialog {
+  max-width: 613px;
+  width: 95%;
+  margin: 20px auto !important;
+}
 .detail__service {
   max-width: 613px;
-  width: 100%;
 }
 div#carouselExampleControls {
   border-radius: 8px;

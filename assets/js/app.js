@@ -1,10 +1,11 @@
 
 $(document).ready(function () {
   $(".header__bar , .offcanvas-overlay").click(function () {
-    $(".offcanvas-area , .offcanvas-overlay").addClass("active");
+    $(".offcanvas-area , .offcanvas-overlay,.header__area").addClass("active");
   });
   $(".menu-close , .offcanvas-overlay").click(function () {
-    $(".offcanvas-area , .offcanvas-overlay").removeClass("active");
+    $(".offcanvas-area , .offcanvas-overlay,.header__area").removeClass("active");
+    
   });
   
   // $(".vision__slider").owlCarousel({
@@ -86,7 +87,14 @@ $(document).ready(function () {
     dots: true
   });
   
-  
+  $(window).on('scroll', function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 245) {
+      $(".header__area").removeClass("scroll-header");
+    } else {
+      $(".header__area").addClass("scroll-header");
+    }
+  });
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
@@ -98,7 +106,7 @@ function add(x){
   x.classList.toggle("add")
 }
 
-function titleRepairs(y){
+function titleRepairs(){
   let booking1 = document.querySelector('.booking1');
   let sell1 = document.querySelector('.sell1');
   let serviceListDetail1 = document.querySelector('.service__list__detail1');
@@ -115,7 +123,7 @@ function titleRepairs(y){
   arrowDown.classList.toggle("arrowDownActive");
 }
 
-function titleRepairs2(z){
+function titleRepairs2(){
   let booking1 = document.querySelector('.booking2');
   let sell1 = document.querySelector('.sell2');
   let serviceListDetail1 = document.querySelector('.service__list__detail2');

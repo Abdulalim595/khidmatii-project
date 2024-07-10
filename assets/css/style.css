@@ -2399,7 +2399,10 @@ form.form-customer a {
   color: var(--clr);
   margin-bottom: 9px;
 }
-
+.booking__card1 {
+  border: none !important;
+  padding: 0px !important;
+}
 .booking__card {
   position: relative;
   border: 1px solid var(--stroke, #E0E0E0);

@@ -1902,19 +1902,35 @@ img.clck {
   margin-bottom: 8px;
 }
 
-.pricing > button,.py-proceed {
+.pricing > button,.pricing > a,.py-proceed {
   width: 208px !important;
   height: 48px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 600;
-  display: block;
 }
 .section.service__checkout {
   margin-bottom: 200px;
 }
+.success__payment__content {
+  max-width: 436px;
+  margin: 0 auto !important;
+}
+.success__payment img {
+  width: 166px;
+}
 
+.success__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
 
+.success__payment p {
+  font-size: 14px;
+}
 
 
 

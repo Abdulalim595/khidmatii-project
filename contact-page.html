@@ -382,6 +382,35 @@
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/app.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchID');
+    const placeholderTexts = [
+        "Search for “AC repair”",
+        "Search for “Cleaning”",
+        "Search for “Washing Machine/Dryer”"
+    ];
+    let currentIndex = 0;
+
+    function changePlaceholder() {
+        searchInput.classList.add('slide-up-fade-out');
+
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % placeholderTexts.length;
+            searchInput.placeholder = placeholderTexts[currentIndex];
+            searchInput.classList.remove('slide-up-fade-out');
+            searchInput.classList.add('slide-down-fade-in');
+
+            setTimeout(() => {
+                searchInput.classList.remove('slide-down-fade-in');
+            }, 500); // match this timing to CSS animation duration
+        }, 500); // match this timing to CSS animation duration
+    }
+
+    setInterval(changePlaceholder, 3000); // change every 3 seconds
+});
+
+</script>
+  <script>
     $('select').niceSelect();
   </script>
 

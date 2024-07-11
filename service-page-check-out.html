@@ -326,10 +326,6 @@
                                           </div>
                                           <a class="btns write-btn" data-bs-toggle="modal" href="#exampleModalToggles" role="button"><img src="assets/img/write.svg" alt=""></a>
                         
-                        
-                                        <!-- <button type="button" class="btns write-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                            <img src="assets/img/write.svg" alt="">
-                                        </button> -->
                                         
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -444,15 +440,9 @@
                                 <span>Amount to pay</span>
                                 <span>937 BD</span>
                             </div>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btns btn__gradient" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                Proceed
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                            <div class="modal fade" id="exampleModalToggle22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
+                                  <div class="modal-content">
                                       <div class="modal-header">
                                         <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
                                       </div>
@@ -520,13 +510,36 @@
                                                 </div>
                                                 <img src="assets/img/pay-cash.svg" alt="">
                                             </div>
-                                            <button type="button" class="btn__gradient py-proceed">Proceed to pay</button>
                                         </div>
+                                        <button class="btn__gradient btns py-proceed" data-bs-target="#exampleModalToggle21" data-bs-toggle="modal" data-bs-dismiss="modal">Proceed to pay</button>
                                       </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle21" aria-hidden="true" aria-labelledby="exampleModalToggleLabel21" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content success__payment__content">
+                                        <div class="modal-header">
+                                          <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="payment__method__card paymentActive">
+                                              <form action="/action_page.php">
+                                                 <div class="success__payment">
+                                                    <img src="assets/img/Done.svg" alt="">
+                                                    <h5>Payment Successful</h5>
+                                                    <p>You have successfully made payment and book the services </p>
+                                                 </div>
+                                              </form>
+                                          </div>
+                                          <a href="booking-page.html" class="btn__gradient btns py-proceed" data-bs-target="#exampleModalToggle21" data-bs-toggle="modal" data-bs-dismiss="modal">Track bookings</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- <a href="#" class="btns btn__gradient">Proceed</a> -->
+                              </div>
+                              <a class="btns btn__gradient" data-bs-toggle="modal" href="#exampleModalToggle22" role="button">Proceed</a>
+                            <!-- Button trigger modal -->
+                            
                         </div>
                     </div>
                 </div>
@@ -612,6 +625,35 @@
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchID');
+    const placeholderTexts = [
+        "Search for “AC repair”",
+        "Search for “Cleaning”",
+        "Search for “Washing Machine/Dryer”"
+    ];
+    let currentIndex = 0;
+
+    function changePlaceholder() {
+        searchInput.classList.add('slide-up-fade-out');
+
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % placeholderTexts.length;
+            searchInput.placeholder = placeholderTexts[currentIndex];
+            searchInput.classList.remove('slide-up-fade-out');
+            searchInput.classList.add('slide-down-fade-in');
+
+            setTimeout(() => {
+                searchInput.classList.remove('slide-down-fade-in');
+            }, 500); // match this timing to CSS animation duration
+        }, 500); // match this timing to CSS animation duration
+    }
+
+    setInterval(changePlaceholder, 3000); // change every 3 seconds
+});
+
+</script>
   <script>
     $('#example').bsCalendar({
  

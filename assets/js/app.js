@@ -206,15 +206,26 @@ function searchItem(){
   let screenOverlay = document.querySelector('.screen__overlay');
   let login = document.querySelector('.login');
   let accountCard = document.querySelector('.account-card');
+  let exampleModalToggle = document.getElementById('exampleModalToggle');
+  let bodyArea = document.querySelector('body-area');
   
   login.addEventListener('click', () => {
     accountCard.classList.toggle('shows')
     mostSearch.classList.remove('searchActive');
+    screenOverlay.classList.add('overlyActive');
   })
-  
+  screenOverlay.addEventListener('click',() => {
+    accountCard.classList.remove('shows');
+    mostSearch.classList.remove('searchActive');
+    screenOverlay.classList.remove('overlyActive');
+  })
+  exampleModalToggle.addEventListener('click', () => {
+    accountCard.classList.remove('shows')
+  })
   searchID.addEventListener('click', () => {
     mostSearch.classList.toggle('searchActive');
-    accountCard.classList.remove('shows')
+    accountCard.classList.remove('shows');
+    screenOverlay.classList.add('overlyActive');
   })
   
   

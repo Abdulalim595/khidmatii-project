@@ -10,7 +10,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
 }
 :root{
   /* color */
@@ -32,6 +31,7 @@
   --f20 : 20px;
   --f24 : 24px;
   --f32 : 32px;
+  --f40 : 40px;
 
 }
 .modal {
@@ -111,7 +111,9 @@ p {
 a {
   text-decoration: none;
 }
-
+.mb {
+  margin-bottom: 51px;
+}
 .btns {
   text-decoration: none;
   display: flex;
@@ -842,6 +844,46 @@ a.login:after {
     /* box-shadow: -32px 0px 9px 0px #38383800; */
 }
 /*===================== HERO CSS AREA START =====================*/
+.index__hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  border-radius: 0px !important;
+  margin-bottom: 22px;
+  height: 377px;
+}
+
+.doorstep__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 7px;
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+  padding: 50px 21px 28px;
+}
+
+.doorstep__card__title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.doorstep__card__title img {
+  width: auto;
+}
+
+.doorstep__card button {
+  width: 110px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+.l-title {
+  font-family: inherit !important;
+  font-weight: 600;
+}
+
 img.khidmatii-img {
   position: absolute;
   top: 288px;
@@ -877,6 +919,393 @@ section {
   font-family: 'satoshi';
 }
 /*===================== HERO CSS AREA END =====================*/
+
+/*===================== Happy-custmer CSS AREA Start =====================*/
+.happycustomer__area {
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+  position: relative;
+}
+
+img.happycustomer-shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 632px;
+  z-index: 0;
+}
+
+.happycustomer__wrap {
+  position: relative;
+}
+
+.happy__customer__left img:last-child {
+  width: 162px;
+  position: absolute;
+  left: -50px;
+  bottom: 158px;
+}
+
+.happy__customer__left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mac__stor {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  top: 120px;
+  left: 38%;
+}
+
+.mac__stor img {width: 140px;}
+/*===================== Happy-custmer CSS AREA END =====================*/
+
+/*===================== Professional CSS AREA Start =====================*/
+.professional__wrap {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.premium__list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6.45px;
+  margin-top: 7px;
+  margin-bottom: 56px;
+}
+
+.premium__list ul li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.premium__list ul li img {
+  width: 18px;
+}
+
+.premium__list {
+  margin: 10px 62px 0px;
+  padding-top: 11px;
+  border-top: 1.72px solid #1191C8;
+}
+.professional__card {
+  border-radius: 37px;
+  overflow: hidden;
+  box-shadow: 0px 20.61px 71.29px 0px #0000001A;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 6px;
+}
+.professional__card1 {
+  background-image: var(--gradientColor);
+}
+.professional__card__top {
+  overflow: hidden;
+  color: #1191C8;
+  background: var(--blue-spft, #E5F7FF);
+  padding: 40px 62px 20px;
+  position: relative;
+  z-index: 0;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+}
+
+.professional__card__top h2 {
+  font-size: var(--f40);
+}
+
+.professional__card__top p {
+  font-size: 27px;
+}
+
+.professional__card__top p span {
+  margin-left: 9px;
+  font-size: 12px;
+}
+
+.professional__card button {
+  width: 79%;
+  height: 50px;
+  margin: 0 auto 30px;
+  border-radius: 50px;
+}
+
+.professional__card:after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 31px;
+  z-index: -1;
+  background: #fff;
+}
+
+.professional__card__top img {
+  position: absolute;
+  top: 13px;
+  width: 91px;
+  right: 0px;
+}
+.professional__btn {
+  margin-top: 60px;
+  margin-bottom: 55px;
+  align-items: center;
+  justify-content: center;
+  gap: 53px;
+}
+
+.professional__btn a {
+  width: 152px;
+  height: 48px;
+  border-radius: 8px;
+}
+.change-membership {
+  margin-bottom: 48px !important;
+}
+.choose__plan .container > p{
+  font-size: 10px;
+  max-width: 864px;
+  margin: 0 auto;
+}
+.professional__btn1 a:nth-child(2) {
+  position: relative;
+  background-image: var(--gradientColor);
+  z-index: 1;
+  color: #000;
+}
+
+.professional__btn1 a:nth-child(2):after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+.professional__btn a:first-child {
+  color: #000;
+  border: 1px solid var(--bwq, #686868);
+}
+
+
+
+
+.memberships__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.membersip__single__card {
+  position: relative;
+  border-radius: 8px;
+  background-image: var(--gradientColor);
+  z-index: 2;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.membersip__single__card:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  left: 1px;
+  bottom: 1px;
+  border-radius: 7px;
+  z-index: -1;
+  background: #fff;
+}
+
+.membersip__single__card > span {
+  border-radius: 0px 23px 23px 0px;
+  background-image: var(--gradientColor);
+  color: #fff;
+  padding: 6px 23px 6px 10px;
+  margin-left: -10px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.membersip__single__card > a {
+  color: #000;
+  font-weight: 600;
+  padding: 12px 8px 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+}
+
+.membersip__card p {
+  margin-bottom: 12px;
+}
+.choose__plan {
+  margin-bottom: 70px;
+}
+.membersip__single__card ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+.membersip__single__card a img {
+  width: 9px;
+}
+
+.membersip__single__card p {
+  display: flex;
+  align-items: center;
+}
+
+.membersip__single__card p img {
+  width: auto;
+  margin-right: 8px;
+}
+
+.membersip__single__card a:first-child, .membersip__single__card a:last-child,.membersip__single__card a:nth-child(2) {
+  border: none;
+}
+
+.memberships__cards > a {
+  font-weight: 600;
+  height: 48px;
+  border: 1px solid var(--RED, #E13A43);
+  color: var(--RED, #E13A43);
+  border-radius: 8px;
+}
+.membersip__table table {
+  width: 100%;
+}
+.membersip__table table tbody tr {
+  border-left: none !important;
+  border-right: none !important;
+  border: 1px solid var(--stroke, #E0E0E0);
+}
+
+.membersip__table table thead tr th,.membersip__table table tbody tr td {
+  padding: 8px 0px;
+  font-size: 14px;
+}
+
+.membersip__table table thead tr th {
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+.customize__title {
+  border-bottom: 1px solid var(--stroke, #E0E0E0);
+  padding-bottom: 9px;
+  margin-bottom: 24px;
+}
+
+.select__plan {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.select__plan__card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.plan__single__card {
+  padding: 16px 32px;
+  border: 1px solid var(--stroke, #E0E0E0);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+
+
+/*===================== Professional CSS AREA END =====================*/
+
+/*===================== Guarante CSS AREA Start =====================*/
+section.guarante__area.mb {
+  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+}
+
+.guarante__content,.platform__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.gurante__wrap,.platform__wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 12px 0px;
+}
+/*===================== Guarante CSS AREA END =====================*/
+
+/*===================== Platform CSS AREA Start =====================*/
+.platform__area {
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+}
+.platform__wrap {
+  padding: 0px;
+}
+.platform__content {
+  max-width: 418px;
+}
+
+.platform__content p,.platform__content span {
+  font-size: 20px;
+}
+
+.platform__content p {
+  margin-bottom: 12px;
+}
+/*===================== Platform CSS AREA END =====================*/
+
+/*===================== Choose-membership CSS AREA Start =====================*/
+.checkout__title.category__title.booking__title.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout__title.category__title.booking__title.title > a {
+  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+  border-radius: 8px;
+  width: 102px;
+  height: 43px;
+  font-size: 20px;
+  gap: 6px;
+  color: #1191C8;
+}
+
+.checkout__title.category__title.booking__title.title > a img {
+  width: 20px;
+}
+.choose__plan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.choose__plan h5 {
+  margin-bottom: 0px;
+}
+/*===================== Choose-membership CSS AREA END =====================*/
 
 /*===================== CONTACT-FORM CSS AREA START =====================*/
 

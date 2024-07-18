@@ -1,4 +1,13 @@
 
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
   $(".header__bar , .offcanvas-overlay").click(function () {
     $(".offcanvas-area , .offcanvas-overlay,.header__area").addClass("active");

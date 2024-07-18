@@ -244,7 +244,9 @@ section.service__application {
   .index__hero {
     height: 194px;
 }
-
+button.accordion-button.collapsed {
+  font-size: 16px;
+}
 .guarante__img img {
     max-width: 300px;
     margin: 0 auto;

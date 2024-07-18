@@ -3199,6 +3199,49 @@ form.form-customer a {
 }
 /*===================== BOOKING-AREA CSS AREA END =====================*/
 
+/*===================== faq-AREA CSS AREA start =====================*/
+.faq__wrap {
+  max-width: 673px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  margin-bottom: 24px;
+}
+
+.faq__cards .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accordion-item {
+  border: 1px solid var(--stroke, #E0E0E0) !important;
+  border-radius: 8px !important;
+}
+
+button.accordion-button.collapsed {
+  padding: 10px 24px 10px 16px;
+  border: none !important;
+  background: linear-gradient(278.94deg, #E4FFE6 -4.61%, #E3F9FF 105.09%);
+  border-radius: 8px !important;
+  font-size: 20px;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  border: none !important;
+}
+
+.faq_accordion_body {
+  padding: 18px 0px;
+  border-top: 1px solid var(--stroke, #E0E0E0) !important;
+}
+
+.faq_accordion_body h4 {
+  margin-bottom: 10px;
+}
+/*===================== faq-AREA CSS AREA END =====================*/
+
 
 
 

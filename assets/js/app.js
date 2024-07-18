@@ -1,8 +1,42 @@
+let planSingleCard = document.querySelectorAll('.plan__single__card');
+let cc = document.querySelector('.s-check');
 
+planSingleCard.forEach(x => {
+  x.addEventListener('click',() => {
+    if(x.classList.add('plancardActive') && cc.classList.add('cSpan')){
+      x.classList.remove('plancardActive')
+      cc.classList.remove('cSpan');
+    }else {
+      x.classList.add('plancardActive')
+      cc.classList.add('cSpan');
+    }
 
+    planSingleCard.forEach((e) => {
+      if (e !== x) {
+        e.classList.remove("plancardActive");
+        cc.classList.remove('cSpan')
+      }
+    });
+  })
+});
 
+let selectServiceSingle = document.querySelectorAll('.select__service__single');
 
+selectServiceSingle.forEach(x => {
+  x.addEventListener('click',() => {
+    if(x.classList.add('selectAc')){
+      x.classList.remove('selectAc')
+    }else {
+      x.classList.add('selectAc')
+    }
 
+    selectServiceSingle.forEach((e) => {
+      if (e !== x) {
+        e.classList.remove("selectAc");
+      }
+    });
+  })
+});
 
 
 

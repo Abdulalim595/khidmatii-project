@@ -69,7 +69,7 @@
                 <a href="#"><img src="assets/img/logo.svg" alt=""></a>
             </div>
             <ul class="d-none d-lg-flex">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="service-page-ele-service.html" class="active">Service</a></li>
                 <li><a href="about-page.html">About</a></li>
                 <li><a href="contact-page.html">Contact Us</a></li>
@@ -203,7 +203,7 @@
         <div class="container">
             <div class="checkout__title category__title booking__title change-membership title">
                 <div class="choose__plan">
-                    <a href="booking-page.html"><img src="assets/img/arrow-square-left.svg" alt=""></a>
+                    <a href="membership-change.html"><img src="assets/img/arrow-square-left.svg" alt=""></a>
                     <div class="booking__detail">
                         <h5>Membership plan</h5>
                     </div>
@@ -241,7 +241,46 @@
                         <a href="#"><small>View payment history</small><img src="assets/img/angle-rights.svg" alt=""></a>
                     </div>
                 </div>
-                <a href="#" class="btns">Cancel membership</a>
+                <a class="btns" data-bs-toggle="modal" href="#exampleModalToggle22" role="button">Cancel membership</a>
+                    <div class="modal fade" id="exampleModalToggle22" aria-labelledby="exampleModalToggleLabel22" tabindex="-1" style="display: none;" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered cancel_modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="membership__content">
+                                <h4>Are you sure! <br> want to cancel the membership</h4>
+                              </div>
+                              <div class="membership__sure">
+                                <button class="btn__gradient btns py-proceed" data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                <button class="btns py-proceed" data-bs-target="#exampleModalToggle21" data-bs-toggle="modal" data-bs-dismiss="modal"><span>Sure</span></button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle21" aria-labelledby="exampleModalToggleLabel21" tabindex="-1" style="display: none;" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered cancel_modal">
+                          <div class="modal-content success__payment__content">
+                              <div class="modal-header">
+                                <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/cros.svg" alt=""></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="payment__method__card paymentActive">
+                                    <form action="/action_page.php">
+                                       <div class="success__payment membership__content">
+                                          <img src="assets/img/done-cancel.svg" alt="">
+                                          <h5>Successfully cancel <br>
+                                            your membership</h5>
+                                       </div>
+                                    </form>
+                                </div>
+                                <a href="booking-page.html" class="btn__gradient btns py-proceed" data-bs-target="#exampleModalToggle21" data-bs-toggle="modal" data-bs-dismiss="modal">Done</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
             </div>
         </div>
      </div>

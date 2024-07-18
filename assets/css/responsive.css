@@ -106,9 +106,48 @@ div#seachField, a.login {
   }
   :root {
     --f32 : 26px;
-    --f24 : 20px
+    --f24 : 20px;
+    --f20 : 18px;
+  --f40 : 30px;
   }
-  
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .professional__card__top p {
+    font-size: 20px;
+}
+.platform__content p, .platform__content span {
+  font-size: 16px;
+}
+.membersip__table {
+  overflow-x: scroll;
+}
+
+.membersip__table table {
+  width: 700px;
+}
+section.service__application {
+  margin-bottom: 60px;
+}
+.platform__content p {
+  margin-bottom: 4px;
+}
+  section.happycustomer__area.mb {
+    padding-top: 20px;
+}
+
+.mac__stor {
+    top: 445px;
+    left: 23%;
+}
+
+.happy__customer__left img:last-child {
+    left: -50px;
+    bottom: 878px;
+}
   .company__contact {
     display: none;
 }
@@ -176,6 +215,23 @@ div#seachField, a.login {
     gap: 20px;
     text-align: center;
 }
+.price__cart, .plan__table {
+  max-width: 100%;
+  margin: 0 !important;
+}
+.choose__plan {
+  margin-bottom: 0px !important;
+}
+.section.service__checkout {
+  margin-bottom: 60px;
+}
+.professional__card__top {
+  padding: 40px 20px 20px;
+}
+
+.premium__list {
+  margin: 10px 20px 0px;
+}
 }
 
 /* SM Small Device :320px. */
@@ -185,6 +241,15 @@ div#seachField, a.login {
   :root {
     --f32 : 24px;
   }
+  .index__hero {
+    height: 194px;
+}
+
+.guarante__img img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
   .about__details {
   padding: 320px 0px !important;
   margin: -250px 0px -240px !important;
@@ -240,12 +305,47 @@ a.body__arrow.btns.btn__gradient {
 .booking_wrap {
   gap: 15px;
 }
+
+.select__service__single {
+  height: 80px;
+}
+
+.plan__single__card {
+  padding: 10px 18px;
+}
+
+.choose__plan {
+  margin-bottom: 0px !important;
+}
+.index__hero {
+  height: 194px;
+}
+
+.guarante__img img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.mac__stor {
+  position: static;
+  flex-direction: row;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.mac__stor img {
+  border-radius: 8px;
+}
+
+.happy__customer__left img:last-child {display: none;}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .offcanvas-area {
     width: 100%;
   }
+  
   .checkout__input {
     grid-template-columns: repeat(1,1fr);
     gap: 12px;

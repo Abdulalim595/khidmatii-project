@@ -18,6 +18,16 @@
   <link rel="stylesheet" href="assets/segoe-ui/stylesheet.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .slot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+  </style>
 </head>
    
 <body>
@@ -142,23 +152,7 @@
                                     <input type="text" placeholder="State*" required>
                                     <input type="text" placeholder="City*">
                                 </div>
-                                <div class="customer__card">
-                                    <h6>Slot</h6>
-                                    <div class="customer__card__field">
-                                        <div class="customer__img__content">
-                                            <img src="assets/img/customar-icon3.svg" alt="">
-                                            <div>
-                                                <h6>Date and time</h6>
-                                            </div>
-                                        </div> 
-                                        <!-- <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button> -->
-                                        <!-- Button trigger modal -->
-                                        
-                                          <a class="btns write-btn" data-bs-toggle="modal" href="#exampleModalToggles" role="button"><img src="assets/img/write.svg" alt=""></a>
-                        
-                                    </div>
-                        
-                                </div>
+                               
                             </form>
                         </div>
                         <div class="collection">
@@ -181,16 +175,41 @@
                                         <span>1h 10m</span>
                                     </div>
                                 </div>
-                                <div class="emergency-booking">
+                                <div class="emergency-booking ">
                                     <div class="emergency-booking__check">
-                                        <img src="assets/img/booking-check.svg" alt="">
+                                        <input type="checkbox" checked>
                                         <h6 class="mb-0">Emergency booking</h6>
                                     </div>
-                                    <ul>
-                                        <li>• 1 service now, 2nd 90 days later for same AC</li>
-                                        <li>• AC service with advanced foam-jet technology</li>
-                                    </ul>
+                                    <div class="d-flex">
+                                        <div>
+                                            <ul class="mb-0">
+                                                <li>• 1 service now, 2nd 90 days later for same AC</li>
+                                                <li>• AC service with advanced foam-jet technology</li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="slot">
+                                            <span class="slot__icon"><i class="fa-solid fa-clock"></i></span>
+                                            <span class="slot__text">Slot</span>
+                                            <br>
+                                                    <div class="customer__img__content">
+                                                        <div>
+                                                            <h6>Date and time</h6>
+                                                        </div>
+                                                    </div> 
+                                                    <!-- <button class="btns write-btn"><img src="assets/img/write.svg" alt=""></button> -->
+                                                    <!-- Button trigger modal -->
+                                                    
+                                                      <a class="btns write-btn" data-bs-toggle="modal" href="#exampleModalToggles" role="button"><img src="assets/img/write.svg" alt=""></a>
+                                    
+                                               
+                                    
+                                          
+                                        </div>
+                                    </div>
+                                    
                                 </div>
+                               
                             </div>
                             <div class="pricing__card">
                                 <h5>Apply discount</h5>

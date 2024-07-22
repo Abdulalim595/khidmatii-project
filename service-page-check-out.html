@@ -27,6 +27,23 @@
             padding-left: 10px;
             margin-left: 10px;
         }
+
+        .checkout__input__btn button {
+     border: 1px solid var(--bwq, #686868);
+    background: #fff;
+    /* border: none; */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.checkout__input__btn button.active {
+    background: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%); /* Active background color */
+    color: white;
+    border: none;
+}
+
+
   </style>
 </head>
    
@@ -131,15 +148,15 @@
                                     <input type="text" placeholder="Name*" required>
                                     <input type="text" placeholder="Mobile number*" required>
                                 </div>
-                                <button><img src="assets/img/use-location.svg" alt=""> Use my location</button>
+                                <button type="button"><img src="assets/img/use-location.svg" alt=""> Use my location</button>
                                 <div class="checkout__input">
                                     <input type="text" placeholder="House no. Building Name*" required>
                                     <input type="text" placeholder="Area">
                                 </div>
                                 <div class="checkout__input">
                                     <div class="checkout__input__btn">
-                                        <button>Home</button>
-                                        <button>Office</button>
+                                        <button type="button" id="homeBtn" class="active" onclick="toggleActive('home')">Home</button>
+                                        <button type="button" id="officeBtn" onclick="toggleActive('office')">Office</button>
                                     </div>
                                     <div class="checkout-pincode">
                                         <input type="text" placeholder="Pincode*" required>
@@ -152,9 +169,9 @@
                                     <input type="text" placeholder="State*" required>
                                     <input type="text" placeholder="City*">
                                 </div>
-                               
                             </form>
                         </div>
+                        
                         <div class="collection">
                             <h5>Cancellation & reschedule policy</h5>
                             <ol>
@@ -720,7 +737,23 @@ $('#example')
   <script>
     $('select').niceSelect();
   </script>
+<script>
+function toggleActive(buttonType) {
+    var homeBtn = document.getElementById('homeBtn');
+    var officeBtn = document.getElementById('officeBtn');
+    
+    if (buttonType === 'home') {
+        homeBtn.classList.add('active');
+        officeBtn.classList.remove('active');
+        officeBtn.style.backgroundColor = '#f0f0f0'; // Reset office button background color
+    } else if (buttonType === 'office') {
+        homeBtn.classList.remove('active');
+        officeBtn.classList.add('active');
+        homeBtn.style.backgroundColor = '#f0f0f0'; // Reset home button background color
+    }
+}
 
+</script>
   <script>
     AOS.init();
     // data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"

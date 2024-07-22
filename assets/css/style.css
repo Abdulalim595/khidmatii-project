@@ -2362,13 +2362,13 @@ section.service__application {
 }
 
 .checkout__input__btn button:last-child {
-  border: 1px solid var(--bwq, #686868);
-  background: #fff;
+  color: black;
+  background-color: white !important;
 }
 
 .checkout__input__btn button:first-child {
-  background: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%);
-  color: #fff;
+  color: black;
+  background-color: white !important;
 }
 
 .emergency-booking__check h6 {

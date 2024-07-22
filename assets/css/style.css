@@ -853,6 +853,7 @@ a.login:after {
   border-radius: 0px !important;
   margin-bottom: 22px;
   height: 377px;
+      margin: -5px;
 }
 
 .doorstep__card {

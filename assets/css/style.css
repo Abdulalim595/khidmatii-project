@@ -23,6 +23,8 @@
   --textGrayOr: #656565;
   --textGrayDark: #5D5D5D;
   --textDark: #1E1E1E;
+  --textWhite: #ffffff;
+
 
   /* font-size */
   --f14 : 14px;
@@ -2314,8 +2316,9 @@ section.service__application {
   justify-content: center;
   width: 100%;
   gap: 12px;
-  color: var(--textBlue);
-  background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+  color: var(--textWhite);
+  background-image: var(--gradientColor);
+  /* background: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%); */
 }
 
 .customars__details form button img {

@@ -2305,7 +2305,12 @@ section.service__application {
   position: relative;
   /* z-index: 999999; */
   border-radius: 8px;
-  background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
+  /* border: 1px solid #1292C8; */
+  background-image: var(--gradientColor);
+    z-index: 1;
+  /* background: #fff; */
+  /* background-image: var(--gradientColor); */
+  /* background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%); */
 }
 
 .customars__details form > button {

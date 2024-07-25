@@ -3,83 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Buttons</title>
+    <title>Footer with Payment Methods</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .proceed__date__card:after {
-            content: '';
-            position: absolute;
-            inset: 1px;
-            border-radius: 7px;
-            z-index: -1;
-            background: #fff;
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
         }
-        .proceed__date__card:hover {
-            background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%);
-        }
-        .proceed__date__card:hover:after {
-            display: none;
-        }
-        .proceed__date__card span {
-            font-size: 11px;
-            font-weight: 500;
-            color: var(--textGray);
-            cursor: pointer; /* Make span tag look clickable */
-        }
-        .proceed__date__card.active {
-            background-color: yellow !important; /* Change this to the desired active background color */
-        }
-        .proceed__date__card {
-            border-radius: 8px;
-            width: 138px;
-            height: 32px;
-            flex-shrink: 0;
-            position: relative;
-            z-index: 1;
-            background-image: linear-gradient(270deg, #1292C8 0%, #52BD8C 100%);
+        .payment-methods {
             display: flex;
-            align-items: center;
             justify-content: center;
-            cursor: pointer; /* Make card look clickable */
+            align-items: center;
         }
-        .proceed__date {
-            margin-top: 16px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .payment-methods img {
+            margin: 0 10px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="proceed__date">
-        <div class="proceed__date__card">
-            <span>09:00 AM - 01:00 PM</span>
-        </div>
-        <div class="proceed__date__card">
-            <span>01:00 PM - 05:00 PM</span>
-        </div>
-        <div class="proceed__date__card">
-            <span>05:00 PM - 09:00 PM</span>
-        </div>
-        <div class="proceed__date__card">
-            <span>09:00 PM - 01:00 AM</span>
-        </div>
-        <div class="proceed__date__card">
-            <span>09:00 PM - 01:00 AM</span>
-        </div>
-        <div class="proceed__date__card">
-            <span>09:00 PM - 01:00 AM</span>
-        </div>
-    </div>
 
-    <script>
-        document.querySelectorAll('.proceed__date__card').forEach(card => {
-            card.addEventListener('click', function() {
-                // Remove 'active' class from all cards
-                document.querySelectorAll('.proceed__date__card').forEach(card => card.classList.remove('active'));
-                // Add 'active' class to the clicked card
-                this.classList.add('active');
-            });
-        });
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="payment-methods">
+                        <img src="https://via.placeholder.com/50x30?text=VISA" alt="Visa">
+                        <img src="https://via.placeholder.com/50x30?text=MasterCard" alt="MasterCard">
+                        <img src="https://via.placeholder.com/50x30?text=Maestro" alt="Maestro">
+                        <img src="https://via.placeholder.com/50x30?text=AmEx" alt="American Express">
+                        <img src="https://via.placeholder.com/50x30?text=Net+Banking" alt="Net Banking">
+                        <img src="https://via.placeholder.com/50x30?text=COD" alt="Cash on Delivery">
+                        <img src="https://via.placeholder.com/50x30?text=Wallets" alt="Wallets">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

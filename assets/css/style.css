@@ -942,6 +942,7 @@ img.happycustomer-shadow {
   transform: translate(-50%,-50%);
   max-width: 632px;
   z-index: 0;
+  
 }
 
 .happycustomer__wrap {
@@ -2381,6 +2382,11 @@ section.service__application {
 
 .emergency-booking__check h6 {
   margin-bottom: 0px;
+  font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.28px;
+    text-align: left;
 }
 
 .customars__details form .checkout__input.address {

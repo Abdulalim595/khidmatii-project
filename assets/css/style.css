@@ -2472,6 +2472,7 @@ img.clck {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-left: 20px;
 }
 
 .apply__discount {

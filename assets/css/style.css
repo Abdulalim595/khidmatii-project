@@ -100,6 +100,7 @@ h4 {
 h5 {
   font-size: 20px;
   margin-bottom: 6px;
+ 
 }
 
 h6 {
@@ -2307,16 +2308,17 @@ section.service__application {
   gap: 15px;
   margin-bottom: 5px;
   position: relative;
+  margin-right: 20px;
   /* z-index: 999999; */
   border-radius: 8px;
+  box-shadow: 0px 0px 0px 2px #d5f6ff;
   /* border: 1px solid #1292C8; */
-  background-image: var(--gradientColor);
-    z-index: 1;
-  /* background: #fff; */
   /* background-image: var(--gradientColor); */
-  /* background-image: linear-gradient(278.94deg, rgba(177, 255, 185, 0.5) -4.61%, rgba(127, 226, 253, 0.5) 105.09%); */
+    z-index: 1;
 }
-
+li.ser {
+  font-size: 12px;
+}
 .customars__details form > button {
   display: flex;
   align-items: center;
@@ -2385,6 +2387,7 @@ section.service__application {
   font-family: Segoe UI;
     font-size: 16px;
     font-weight: 600;
+    color: black;
     line-height: 21.28px;
     text-align: left;
 }
@@ -2449,13 +2452,15 @@ img.clck {
 
 .pricing__card > h5 {
   margin-bottom: 8px;
+  font-weight: normal;
 }
 
 .pricing__card {
   padding: 22px 12px;
   border-radius: 8px;
   position: relative;
-  background-image: var(--gradientColor);
+  /* background-image: var(--gradientColor); */
+  box-shadow: 0px 0px 0px 2px #d5f6ff;
   z-index: 1;
 }
 

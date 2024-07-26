@@ -135,6 +135,27 @@
                             <span>On Thu, May 2nd at 8:38 PM</span>
                             <button class="btn__gradient">Book again</button>
                         </div>
+
+
+                        <!-- rating  -->
+                        <div class="ratings mt-3">
+                            <h5>Ratings and Review</h5>
+                            <div class="stars">
+                                <span class="star" data-value="1">☆</span>
+                                <span class="star" data-value="2">☆</span>
+                                <span class="star" data-value="3">☆</span>
+                                <span class="star" data-value="4">☆</span>
+                                <span class="star" data-value="5">☆</span> &nbsp; &nbsp;
+                                <span>Please rate our service ! 😊</span>
+                            </div>
+                            <div class="d-flex">
+                                <input type="email" class="form-control rat" id="exampleFormControlInput101" placeholder="Please write your precious experience">
+                                <button class="btn__gradient">Post</button>
+                            </div>
+                        </div>
+
+
+
                         <div class="download__invoice">
                             <div class="download__img">
                                 <img src="assets/img/paper-doller.svg" alt="">
@@ -344,6 +365,15 @@
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <script>
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            stars.forEach(s => s.classList.remove('selected'));
+            star.classList.add('selected');
+        });
+    });
+</script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchID');

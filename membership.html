@@ -18,6 +18,18 @@
   <link rel="stylesheet" href="assets/segoe-ui/stylesheet.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    a.btns.new-btn {
+    font-weight: 600;
+    height: 48px;
+    border: 1px solid var(--RED, #E13A43);
+    color: var(--RED, #E13A43);
+    border-radius: 8px;
+}
+.small, small {
+    font-size: 15px;
+}
+  </style>
 </head>
    
 <body>
@@ -123,27 +135,52 @@
                 <a href="#" class="btns"><img src="assets/img/question.svg" alt=""> Help</a>
             </div>
             <div class="memberships__cards">
-                <div class="membersip__card">
-                    <p>Membership details</p>
-                    <div class="membersip__single__card">
-                        <span>Member since 2021</span>
-                        <a href="#"><small>Premium plan</small></a>
-                        <p>Next payment: 19 July 2024</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="membersip__card">
+                        <p>Membership details</p>
+                        <div class="membersip__single__card">
+                            <span>Member since 2021</span>
+                            <a href="#"><small>Premium plan</small></a>
+                            <p>Next payment: 19 July 2024</p>
+                        </div>
                     </div>
-                </div>
-                <div class="membersip__card">
-                    <p>Plan details</p>
-                    <div class="membersip__single__card">
-                        <a href="#"><small>Premium plan</small></a>
-                        <ul>
-                            <li>plan include features</li>
-                            <li>plan include features</li>
-                            <li>plan include features</li>
-                        </ul>
-                        <a href="#"><small>Change plan</small><img src="assets/img/angle-rights.svg" alt=""></a>
+                    <div class="mt-2">
+                      <a class="btns new-btn" data-bs-toggle="modal" href="#exampleModalToggle22" role="button">Cancel membership</a>
                     </div>
+
+                  </div>  
+                  <div class="col-md-6">
+                    <div class="membersip__card">
+                      <p>Plan details</p>
+                      <div class="membersip__single__card">
+                          <a href="#"><small>Premium plan</small></a>
+                          <ul>
+                              <li>plan include features</li>
+                              <li>plan include features</li>
+                              <li>plan include features</li>
+                          </ul>
+                          <a href="#" style="margin-top: 16px;"><small>Change plan</small><img src="assets/img/angle-rights.svg" alt=""></a>
+                      </div>
+                  </div>
+                  </div>
                 </div>
-                <div class="membersip__card">
+                <div class="row mt-5">
+                  <div class="col-md-12">
+                    <p class="mt-1">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at obcaecati hic sapiente illo! Similique, iste qui? Facilis, fugit doloribus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                    </p>
+                    <p class="mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at obcaecati hic sapiente illo! Similique, iste qui? Facilis, fugit doloribus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+                
+               
+              
+                <!-- <div class="membersip__card">
                     <p>Plan details</p>
                     <div class="membersip__single__card">
                         <a href="#"><small>Premium plan</small></a>
@@ -152,8 +189,8 @@
                         <a href="#"><small>Redeem coupon code</small><img src="assets/img/angle-rights.svg" alt=""></a>
                         <a href="#"><small>View payment history</small><img src="assets/img/angle-rights.svg" alt=""></a>
                     </div>
-                </div>
-                <a class="btns" data-bs-toggle="modal" href="#exampleModalToggle22" role="button">Cancel membership</a>
+                </div> -->
+                <!-- <a class="btns" data-bs-toggle="modal" href="#exampleModalToggle22" role="button">Cancel membership</a> -->
                     
             </div>
         </div>
